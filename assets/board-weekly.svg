@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720 1075" width="1720" height="1075">
+  <rect x="0" y="0" width="1720" height="1075" fill="#FAFBFB"/>
+
+  <!-- title -->
+  <rect x="40" y="28" width="1640" height="60" rx="6" fill="#10A37F"/>
+  <text x="64" y="66" font-size="25" font-weight="700" fill="#FFFFFF">示例市场 · 业务信息周报</text>
+  <text x="1656" y="66" font-size="14" fill="#E7F6F0" text-anchor="end">示例 · 全虚构 · 更新 2026-06-24</text>
+
+  <!-- 一、经营情绪基调 -->
+  <text x="40" y="128" font-size="17" font-weight="700" fill="#0A0C0C">一、经营情绪基调</text>
+  <rect x="40" y="142" width="533" height="118" rx="6" fill="#FBE9E7" stroke="#D9534F" stroke-width="2"/>
+  <text x="62" y="178" font-size="18" font-weight="700" fill="#B23B36">客情 / 市场服务 · 承压</text>
+  <text x="62" y="210" font-size="14" fill="#1A1E1F">结算到账故障集中爆发、</text>
+  <text x="62" y="234" font-size="14" fill="#1A1E1F">信贷营销过度投诉</text>
+  <rect x="593" y="142" width="533" height="118" rx="6" fill="#FCF2E1" stroke="#E8A23D" stroke-width="2"/>
+  <text x="615" y="178" font-size="18" font-weight="700" fill="#8A5B12">竞争 · 加剧</text>
+  <text x="615" y="210" font-size="14" fill="#1A1E1F">竞品 A 本周最活跃、代理</text>
+  <text x="615" y="234" font-size="14" fill="#1A1E1F">流向竞品 B</text>
+  <rect x="1146" y="142" width="534" height="118" rx="6" fill="#E9F1FC" stroke="#3B7DE0" stroke-width="2"/>
+  <text x="1168" y="178" font-size="18" font-weight="700" fill="#2C5FB0">政策 / 市场 · 高压</text>
+  <text x="1168" y="210" font-size="14" fill="#1A1E1F">独家绑定新规 + 行业清机 +</text>
+  <text x="1168" y="234" font-size="14" fill="#1A1E1F">通胀走高 / 汇率波动</text>
+
+  <!-- 二、本周四大业务信号 -->
+  <text x="40" y="300" font-size="17" font-weight="700" fill="#0A0C0C">二、本周四大业务信号</text>
+  <!-- card 1 红 -->
+  <rect x="40" y="314" width="399" height="200" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="40" y="314" width="399" height="6" rx="3" fill="#D9534F"/>
+  <text x="60" y="352" font-size="16" font-weight="700" fill="#B23B36">客情 · 结算到账故障</text>
+  <text x="60" y="386" font-size="13.5" fill="#1A1E1F">6/23-24 集中爆发：付款↔</text>
+  <text x="60" y="410" font-size="13.5" fill="#1A1E1F">钱包 "客户付款</text>
+  <text x="60" y="434" font-size="13.5" fill="#1A1E1F">一两天未到账"+ 当日加载失败</text>
+  <text x="60" y="494" font-size="12.5" fill="#9AA0A2">来源 社媒 · 一线投诉</text>
+  <!-- card 2 琥珀 -->
+  <rect x="454" y="314" width="399" height="200" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="454" y="314" width="399" height="6" rx="3" fill="#E8A23D"/>
+  <text x="474" y="352" font-size="16" font-weight="700" fill="#8A5B12">竞品 · 本周动态</text>
+  <text x="474" y="386" font-size="13.5" fill="#1A1E1F">竞品 A 连推卡受理 / 钱包付；</text>
+  <text x="474" y="410" font-size="13.5" fill="#1A1E1F">代理流向竞品 B；竞品 C</text>
+  <text x="474" y="434" font-size="13.5" fill="#1A1E1F">高息揽存</text>
+  <text x="474" y="494" font-size="12.5" fill="#9AA0A2">来源 官博 / 媒体 / 社媒</text>
+  <!-- card 3 绿 -->
+  <rect x="868" y="314" width="399" height="200" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="868" y="314" width="399" height="6" rx="3" fill="#10A37F"/>
+  <text x="888" y="352" font-size="16" font-weight="700" fill="#0B7355">商户贷 · 跨行业分期</text>
+  <text x="888" y="386" font-size="13.5" fill="#1A1E1F">能源 / 手机 / 车辆资产升温</text>
+  <text x="888" y="410" font-size="13.5" fill="#1A1E1F">（设备即抵押 + 远程锁机）；</text>
+  <text x="888" y="434" font-size="13.5" fill="#1A1E1F">竞品上线出行资产分期</text>
+  <text x="888" y="494" font-size="12.5" fill="#9AA0A2">来源 媒体 / 官网</text>
+  <!-- card 4 蓝 -->
+  <rect x="1282" y="314" width="398" height="200" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="1282" y="314" width="398" height="6" rx="3" fill="#3B7DE0"/>
+  <text x="1302" y="352" font-size="16" font-weight="700" fill="#2C5FB0">政策 / 市场 · 多重冲击</text>
+  <text x="1302" y="386" font-size="13.5" fill="#1A1E1F">独家绑定新规（或致代理退出）；</text>
+  <text x="1302" y="410" font-size="13.5" fill="#1A1E1F">市占率封顶；行业清机；</text>
+  <text x="1302" y="434" font-size="13.5" fill="#1A1E1F">部分市场关停 · 监管趋严</text>
+  <text x="1302" y="494" font-size="12.5" fill="#9AA0A2">来源 监管 / 媒体</text>
+
+  <!-- 三、竞品盯防排序 -->
+  <text x="40" y="556" font-size="17" font-weight="700" fill="#0A0C0C">三、竞品盯防排序（对核心 POS 业务威胁）</text>
+  <rect x="40" y="572" width="800" height="380" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="66" y="624" font-size="16" fill="#1A1E1F"><tspan font-weight="700" fill="#0B7355">1  竞品 A</tspan>   POS 市占约 38.5% · 月交易数十亿，头号对手</text>
+  <line x1="66" y1="648" x2="814" y2="648" stroke="#E1E3E4" stroke-width="1"/>
+  <text x="66" y="690" font-size="16" fill="#1A1E1F"><tspan font-weight="700">2  竞品 B</tspan>   高息揽存 + 积分游戏化 + 激进招代理</text>
+  <line x1="66" y1="714" x2="814" y2="714" stroke="#E1E3E4" stroke-width="1"/>
+  <text x="66" y="756" font-size="16" fill="#1A1E1F"><tspan font-weight="700">3  竞品 C</tspan>   本周最活跃：卡受理 / 钱包付 / 拉新周</text>
+  <line x1="66" y1="780" x2="814" y2="780" stroke="#E1E3E4" stroke-width="1"/>
+  <text x="66" y="822" font-size="16" fill="#1A1E1F"><tspan font-weight="700">4  竞品 D</tspan>   电信渠道铺 agent，在涨</text>
+  <line x1="66" y1="846" x2="814" y2="846" stroke="#E1E3E4" stroke-width="1"/>
+  <text x="66" y="888" font-size="16" fill="#1A1E1F"><tspan font-weight="700">5  竞品 E</tspan>   当前萎缩、但用户基数最大，预警</text>
+
+  <!-- 四、业务视角建议 -->
+  <text x="860" y="556" font-size="17" font-weight="700" fill="#0A0C0C">四、业务视角建议（速览）</text>
+  <rect x="860" y="572" width="820" height="380" rx="6" fill="#E7F6F0" stroke="#10A37F" stroke-width="2"/>
+  <text x="886" y="622" font-size="15" fill="#1A1E1F"><tspan font-weight="700" fill="#0B7355">① 防代理流失</tspan>   应对"独家绑定"，用佣金 + 独占争夺 + 商户贷锁忠诚</text>
+  <line x1="886" y1="648" x2="1654" y2="648" stroke="#C7E7DB" stroke-width="1"/>
+  <text x="886" y="692" font-size="15" fill="#1A1E1F"><tspan font-weight="700" fill="#0B7355">② 商户贷业务推广</tspan>   售卖（流水筛客）/ 催收（流水代扣）/ 风控（门槛 + 黑名单）三视角</text>
+  <line x1="886" y1="718" x2="1654" y2="718" stroke="#C7E7DB" stroke-width="1"/>
+  <text x="886" y="762" font-size="15" fill="#1A1E1F"><tspan font-weight="700" fill="#0B7355">③ 竞品营销</tspan>   对标竞品 A 分层返现 / 加油返 7.5%、竞品 C 高息揽存（进行中）</text>
+  <line x1="886" y1="788" x2="1654" y2="788" stroke="#C7E7DB" stroke-width="1"/>
+  <text x="886" y="832" font-size="15" fill="#1A1E1F"><tspan font-weight="700" fill="#0B7355">④ 市场办公室</tspan>   盯市场内 POS / 商户贷 / 二维码销售、POS 维护、商户集中</text>
+  <line x1="886" y1="858" x2="1654" y2="858" stroke="#C7E7DB" stroke-width="1"/>
+  <text x="886" y="900" font-size="13" fill="#6B7173">（已删"结算可靠性"—归产品团队）</text>
+
+  <!-- bottom bar -->
+  <rect x="40" y="982" width="1640" height="50" rx="6" fill="#10A37F"/>
+  <text x="80" y="1013" font-size="14.5" font-weight="700" fill="#FFFFFF">实时抓取 社媒 / 应用商店 / 媒体核实</text>
+  <line x1="620" y1="994" x2="620" y2="1020" stroke="#7FCBB4" stroke-width="1.5"/>
+  <text x="660" y="1013" font-size="14.5" font-weight="700" fill="#FFFFFF">业务团队周会 · 对外市场情报（每条附渠道与原帖链接）</text>
+</svg>
