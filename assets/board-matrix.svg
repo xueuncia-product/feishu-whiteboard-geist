@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720 1060" width="1720" height="1060">
+  <defs>
+    <marker id="mar" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L10 4 L0 8 z" fill="#10A37F"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1720" height="1060" fill="#FAFBFB"/>
+
+  <!-- title -->
+  <rect x="40" y="28" width="1640" height="60" rx="6" fill="#10A37F"/>
+  <text x="64" y="66" font-size="25" font-weight="700" fill="#FFFFFF">代理分层 v0.2 · 双坐标制</text>
+  <text x="1656" y="66" font-size="14" fill="#E7F6F0" text-anchor="end">示例 · 全虚构 · 质量 × 体量 · 全量 33,719 验证</text>
+
+  <!-- sub bar -->
+  <rect x="40" y="100" width="1640" height="46" rx="6" fill="#E7F6F0" stroke="#10A37F" stroke-width="1.5"/>
+  <text x="64" y="129" font-size="15" font-weight="700" fill="#0B7355">金属〔体量 · 活跃台数 = 做多大〕 × 星级〔质量 · 台均收入 = 做多好〕</text>
+  <text x="1656" y="129" font-size="14" fill="#0B7355" text-anchor="end">两轴正交 · 互不掩盖</text>
+
+  <!-- ① 9宫格落位 -->
+  <text x="40" y="186" font-size="18" font-weight="700" fill="#0A0C0C">① 9 宫格落位（现场拖人 / 调档用）</text>
+  <text x="40" y="210" font-size="13" fill="#6B7173">底色越深 = 人越多；粒度可换 4×5（见下方决策②）</text>
+
+  <!-- y-axis label -->
+  <text x="58" y="430" font-size="13" font-weight="700" fill="#6B7173" transform="rotate(-90 58 430)">金属 = 体量（活跃台数）</text>
+
+  <!-- row labels -->
+  <text x="120" y="298" font-size="22" font-weight="700" fill="#0A0C0C" text-anchor="middle">金</text>
+  <text x="120" y="320" font-size="12" fill="#6B7173" text-anchor="middle">大</text>
+  <text x="120" y="438" font-size="22" font-weight="700" fill="#0A0C0C" text-anchor="middle">银</text>
+  <text x="120" y="460" font-size="12" fill="#6B7173" text-anchor="middle">中</text>
+  <text x="120" y="578" font-size="22" font-weight="700" fill="#0A0C0C" text-anchor="middle">铜</text>
+  <text x="120" y="600" font-size="12" fill="#6B7173" text-anchor="middle">小</text>
+
+  <!-- grid cells: cols x170/385/600 w205 ; rows y230/370/510 h130 -->
+  <!-- 金 row -->
+  <rect x="170" y="230" width="205" height="130" rx="5" fill="#F2FAF6" stroke="#E8A23D" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="272" y="300" font-size="30" font-weight="700" fill="#0A0C0C" text-anchor="middle">35</text>
+  <text x="272" y="330" font-size="12" fill="#8A5B12" text-anchor="middle">金1★ · 大而低效</text>
+  <rect x="385" y="230" width="205" height="130" rx="5" fill="#BFE6D4"/>
+  <text x="487" y="308" font-size="30" font-weight="700" fill="#0A0C0C" text-anchor="middle">2,725</text>
+  <rect x="600" y="230" width="205" height="130" rx="5" fill="#CDEBDD"/>
+  <text x="702" y="308" font-size="30" font-weight="700" fill="#0A0C0C" text-anchor="middle">2,384</text>
+  <!-- 银 row -->
+  <rect x="170" y="370" width="205" height="130" rx="5" fill="#E3F3EC"/>
+  <text x="272" y="448" font-size="30" font-weight="700" fill="#0A0C0C" text-anchor="middle">569</text>
+  <rect x="385" y="370" width="205" height="130" rx="5" fill="#7FCBAA"/>
+  <text x="487" y="448" font-size="30" font-weight="700" fill="#0A0C0C" text-anchor="middle">5,901</text>
+  <rect x="600" y="370" width="205" height="130" rx="5" fill="#A9DCC6"/>
+  <text x="702" y="448" font-size="30" font-weight="700" fill="#0A0C0C" text-anchor="middle">3,886</text>
+  <!-- 铜 row -->
+  <rect x="170" y="510" width="205" height="130" rx="5" fill="#5FBE99"/>
+  <text x="272" y="588" font-size="30" font-weight="700" fill="#0A0C0C" text-anchor="middle">10,884</text>
+  <rect x="385" y="510" width="205" height="130" rx="5" fill="#94D4B8"/>
+  <text x="487" y="588" font-size="30" font-weight="700" fill="#0A0C0C" text-anchor="middle">5,173</text>
+  <rect x="600" y="510" width="205" height="130" rx="5" fill="#D9F0E5" stroke="#E8A23D" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="702" y="580" font-size="30" font-weight="700" fill="#0A0C0C" text-anchor="middle">2,162</text>
+  <text x="702" y="610" font-size="12" fill="#8A5B12" text-anchor="middle">铜3★ · 小而精</text>
+
+  <!-- col labels -->
+  <text x="272" y="668" font-size="18" font-weight="700" fill="#0A0C0C" text-anchor="middle">★1</text>
+  <text x="487" y="668" font-size="18" font-weight="700" fill="#0A0C0C" text-anchor="middle">★2</text>
+  <text x="702" y="668" font-size="18" font-weight="700" fill="#0A0C0C" text-anchor="middle">★3</text>
+  <text x="487" y="694" font-size="13" fill="#6B7173" text-anchor="middle">星级 = 质量（台均收入 · 分赛道归一）</text>
+
+  <!-- ② 两个权益域 -->
+  <text x="870" y="186" font-size="18" font-weight="700" fill="#0A0C0C">② 两个权益域（各有牙 · 互补）</text>
+  <rect x="870" y="206" width="395" height="240" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="870" y="206" width="6" height="240" rx="3" fill="#10A37F"/>
+  <text x="898" y="242" font-size="16" font-weight="700" fill="#0B7355">金属域 → 硬资源 / 信任</text>
+  <text x="898" y="268" font-size="12.5" fill="#6B7173">规模越大给越多 · 定返佣基数</text>
+  <text x="898" y="304" font-size="14" fill="#1A1E1F">· 授信额度 · 铺货账期</text>
+  <text x="898" y="334" font-size="14" fill="#1A1E1F">· 设备优先配给 · 专属客服</text>
+  <text x="898" y="364" font-size="14" fill="#1A1E1F">· 区域级别</text>
+  <line x1="898" y1="388" x2="1245" y2="388" stroke="#E1E3E4" stroke-width="1"/>
+  <text x="898" y="418" font-size="13" font-weight="700" fill="#0B7355">= 团队价值指数（穿透）的外显</text>
+
+  <rect x="1285" y="206" width="395" height="240" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="1285" y="206" width="6" height="240" rx="3" fill="#3B7DE0"/>
+  <text x="1313" y="242" font-size="16" font-weight="700" fill="#2C5FB0">星级域 → 激励 / 成长</text>
+  <text x="1313" y="268" font-size="12.5" fill="#6B7173">与体量脱钩 · 会经营当期就拿钱</text>
+  <text x="1313" y="304" font-size="14" fill="#1A1E1F">· 返佣费率加成（★越高每笔越多）</text>
+  <text x="1313" y="334" font-size="14" fill="#1A1E1F">· 纯星级激励池（体量碾不动）</text>
+  <text x="1313" y="364" font-size="14" fill="#1A1E1F">· 晋升快通 · 培训</text>
+  <line x1="1313" y1="388" x2="1660" y2="388" stroke="#E1E3E4" stroke-width="1"/>
+  <text x="1313" y="418" font-size="13" font-weight="700" fill="#2C5FB0">= 经营能力指数（个体）的外显</text>
+
+  <!-- ③ 重叠band -->
+  <text x="870" y="492" font-size="18" font-weight="700" fill="#0A0C0C">③ 重叠 band：小而精可越级超过大而粗</text>
+  <rect x="870" y="512" width="290" height="64" rx="6" fill="#E7F6F0" stroke="#10A37F" stroke-width="2"/>
+  <text x="888" y="540" font-size="14" font-weight="700" fill="#0B7355">铜3★（小而精）</text>
+  <text x="888" y="562" font-size="12.5" fill="#1A1E1F">总收入中位 ¥2,818</text>
+  <line x1="1166" y1="544" x2="1226" y2="544" stroke="#10A37F" stroke-width="3" marker-end="url(#mar)"/>
+  <text x="1196" y="532" font-size="12" font-weight="700" fill="#0B7355" text-anchor="middle">越过</text>
+  <rect x="1232" y="512" width="270" height="64" rx="6" fill="#F5F6F6" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="1250" y="540" font-size="14" font-weight="700" fill="#6B7173">银1★（大而平庸）</text>
+  <text x="1250" y="562" font-size="12.5" fill="#1A1E1F">总收入中位 ¥1,582</text>
+  <text x="1518" y="550" font-size="12.5" fill="#6B7173">铜3★台均最高</text>
+
+  <rect x="870" y="592" width="290" height="64" rx="6" fill="#E7F6F0" stroke="#10A37F" stroke-width="2"/>
+  <text x="888" y="620" font-size="14" font-weight="700" fill="#0B7355">银3★</text>
+  <text x="888" y="642" font-size="12.5" fill="#1A1E1F">总收入中位 ¥9,501</text>
+  <line x1="1166" y1="624" x2="1226" y2="624" stroke="#10A37F" stroke-width="3" marker-end="url(#mar)"/>
+  <text x="1196" y="612" font-size="12" font-weight="700" fill="#0B7355" text-anchor="middle">越过</text>
+  <rect x="1232" y="592" width="270" height="64" rx="6" fill="#F5F6F6" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="1250" y="620" font-size="14" font-weight="700" fill="#6B7173">金1★（大而低效）</text>
+  <text x="1250" y="642" font-size="12.5" fill="#1A1E1F">总收入中位 ¥6,712</text>
+  <text x="1518" y="630" font-size="12.5" fill="#6B7173">高星小档 &gt; 低星大档</text>
+
+  <!-- 今天要拍的 6 个决策点 -->
+  <rect x="40" y="710" width="1640" height="44" rx="6" fill="#0A0C0C"/>
+  <text x="64" y="739" font-size="16" font-weight="700" fill="#FFFFFF">今天要拍的 6 个决策点</text>
+  <text x="1656" y="739" font-size="13" fill="#E8A23D" text-anchor="end">琥珀 = 待拍板</text>
+
+  <!-- 6 cards -->
+  <rect x="40" y="768" width="257" height="270" rx="6" fill="#FFFFFF" stroke="#E8A23D" stroke-width="2"/>
+  <circle cx="68" cy="800" r="14" fill="#E8A23D"/>
+  <text x="68" y="805" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="92" y="806" font-size="15" font-weight="700" fill="#0A0C0C">双坐标方向</text>
+  <text x="60" y="846" font-size="13" fill="#1A1E1F">已拍 C 方案，</text>
+  <text x="60" y="868" font-size="13" fill="#1A1E1F">今天复核确认。</text>
+  <text x="60" y="912" font-size="12.5" fill="#6B7173">质量×体量拆开，</text>
+  <text x="60" y="934" font-size="12.5" fill="#6B7173">不再单主轴。</text>
+
+  <rect x="312" y="768" width="257" height="270" rx="6" fill="#FFFFFF" stroke="#E8A23D" stroke-width="2"/>
+  <circle cx="340" cy="800" r="14" fill="#E8A23D"/>
+  <text x="340" y="805" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+  <text x="364" y="806" font-size="15" font-weight="700" fill="#0A0C0C">格子粒度</text>
+  <rect x="488" y="790" width="66" height="28" rx="14" fill="#E7F6F0"/>
+  <text x="521" y="809" font-size="12" font-weight="700" fill="#0B7355" text-anchor="middle">今天定</text>
+  <text x="332" y="846" font-size="13" fill="#1A1E1F">3×3（讲原理）</text>
+  <text x="332" y="868" font-size="13" fill="#1A1E1F">vs 4×5（对齐线上）</text>
+  <text x="332" y="912" font-size="12.5" fill="#6B7173">两个口径并排比。</text>
+
+  <rect x="584" y="768" width="257" height="270" rx="6" fill="#FFFFFF" stroke="#E8A23D" stroke-width="2"/>
+  <circle cx="612" cy="800" r="14" fill="#E8A23D"/>
+  <text x="612" y="805" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+  <text x="636" y="806" font-size="15" font-weight="700" fill="#0A0C0C">70 / 30 配比</text>
+  <text x="604" y="846" font-size="13" fill="#1A1E1F">体量轨 : 纯星级池</text>
+  <text x="604" y="868" font-size="13" fill="#1A1E1F">起步 70 / 30。</text>
+  <text x="604" y="912" font-size="12.5" fill="#6B7173">偏体量养大户，</text>
+  <text x="604" y="934" font-size="12.5" fill="#6B7173">偏星级奖会经营。</text>
+
+  <rect x="856" y="768" width="257" height="270" rx="6" fill="#FFFFFF" stroke="#E8A23D" stroke-width="2"/>
+  <circle cx="884" cy="800" r="14" fill="#E8A23D"/>
+  <text x="884" y="805" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+  <text x="908" y="806" font-size="15" font-weight="700" fill="#0A0C0C">星级费率档</text>
+  <text x="876" y="846" font-size="13" fill="#1A1E1F">★1×1.0 → ★5×1.3</text>
+  <text x="876" y="912" font-size="12.5" fill="#6B7173">每档加多少、</text>
+  <text x="876" y="934" font-size="12.5" fill="#6B7173">解锁门槛松紧。</text>
+
+  <rect x="1128" y="768" width="257" height="270" rx="6" fill="#FFFFFF" stroke="#E8A23D" stroke-width="2"/>
+  <circle cx="1156" cy="800" r="14" fill="#E8A23D"/>
+  <text x="1156" y="805" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+  <text x="1180" y="806" font-size="15" font-weight="700" fill="#0A0C0C">赛道划法</text>
+  <text x="1148" y="846" font-size="13" fill="#1A1E1F">成熟 / 成长 /</text>
+  <text x="1148" y="868" font-size="13" fill="#1A1E1F">战略高地 / 开荒</text>
+  <text x="1148" y="912" font-size="12.5" fill="#6B7173">星级归一的分母，</text>
+  <text x="1148" y="934" font-size="12.5" fill="#6B7173">各区落哪条。</text>
+
+  <rect x="1400" y="768" width="280" height="270" rx="6" fill="#FFFFFF" stroke="#E8A23D" stroke-width="2"/>
+  <circle cx="1428" cy="800" r="14" fill="#E8A23D"/>
+  <text x="1428" y="805" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle">6</text>
+  <text x="1452" y="806" font-size="15" font-weight="700" fill="#0A0C0C">重叠幅度</text>
+  <text x="1420" y="846" font-size="13" fill="#1A1E1F">band 之间重多少。</text>
+  <text x="1420" y="912" font-size="12.5" fill="#6B7173">越级强度旋钮：</text>
+  <text x="1420" y="934" font-size="12.5" fill="#6B7173">缩小 = 更金属主导。</text>
+</svg>
