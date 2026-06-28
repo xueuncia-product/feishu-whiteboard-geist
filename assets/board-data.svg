@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720 1010" width="1720" height="1010">
+  <defs>
+    <marker id="ar" markerWidth="11" markerHeight="11" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L9 4 L0 8 z" fill="#4A5052"/>
+    </marker>
+    <marker id="arG" markerWidth="11" markerHeight="11" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L9 4 L0 8 z" fill="#10A37F"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1720" height="1010" fill="#FAFBFB"/>
+
+  <!-- title -->
+  <rect x="40" y="28" width="1640" height="60" rx="6" fill="#10A37F"/>
+  <text x="64" y="66" font-size="25" font-weight="700" fill="#FFFFFF">示例 App · 埋点数据分析 · 2026-01 ~ 06</text>
+  <text x="1656" y="65" font-size="14" fill="#E7F6F0" text-anchor="end">示例 · 全虚构 · 93 个埋点事件 · UV / PV 口径</text>
+
+  <!-- ===== ① 大盘活跃趋势 (left-top) ===== -->
+  <rect x="40" y="108" width="980" height="430" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="40" y="108" width="6" height="430" rx="3" fill="#10A37F"/>
+  <text x="70" y="146" font-size="19" font-weight="700" fill="#0A0C0C">① 大盘活跃趋势</text>
+  <text x="70" y="172" font-size="13.5" fill="#6B7173">全 App 月度活跃总数（万）· 缓升后走平、稳定在 ~2.2 万（非回落）</text>
+
+  <!-- bars baseline y=470 -->
+  <line x1="80" y1="470" x2="980" y2="470" stroke="#E1E3E4" stroke-width="1.5"/>
+  <!-- 01 2.01 h178 -->
+  <rect x="110" y="292" width="92" height="178" rx="3" fill="#EDEFEF"/>
+  <text x="156" y="280" font-size="18" font-weight="700" fill="#0A0C0C" text-anchor="middle">2.01</text>
+  <text x="156" y="494" font-size="13" fill="#6B7173" text-anchor="middle">01月</text>
+  <!-- 02 2.07 h183 -->
+  <rect x="250" y="287" width="92" height="183" rx="3" fill="#EDEFEF"/>
+  <text x="296" y="275" font-size="18" font-weight="700" fill="#0A0C0C" text-anchor="middle">2.07</text>
+  <text x="296" y="494" font-size="13" fill="#6B7173" text-anchor="middle">02月</text>
+  <!-- 03 2.17 h192 -->
+  <rect x="390" y="278" width="92" height="192" rx="3" fill="#EDEFEF"/>
+  <text x="436" y="266" font-size="18" font-weight="700" fill="#0A0C0C" text-anchor="middle">2.17</text>
+  <text x="436" y="494" font-size="13" fill="#6B7173" text-anchor="middle">03月</text>
+  <!-- 04 2.26 h200 highlight -->
+  <rect x="530" y="270" width="92" height="200" rx="3" fill="#10A37F"/>
+  <text x="576" y="258" font-size="18" font-weight="700" fill="#0B7355" text-anchor="middle">2.26</text>
+  <text x="576" y="494" font-size="13" font-weight="700" fill="#0B7355" text-anchor="middle">04月 顶</text>
+  <!-- 05 2.26 h200 -->
+  <rect x="670" y="270" width="92" height="200" rx="3" fill="#EDEFEF"/>
+  <text x="716" y="258" font-size="18" font-weight="700" fill="#0A0C0C" text-anchor="middle">2.26</text>
+  <text x="716" y="494" font-size="13" fill="#6B7173" text-anchor="middle">05月</text>
+  <!-- 06 2.19 dashed amber (MTD) -->
+  <rect x="810" y="276" width="92" height="194" rx="3" fill="#FCF2E1" stroke="#E8A23D" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="856" y="264" font-size="18" font-weight="700" fill="#8A5B12" text-anchor="middle">2.19</text>
+  <text x="856" y="494" font-size="13" fill="#8A5B12" text-anchor="middle">06月*</text>
+  <text x="70" y="524" font-size="12.5" fill="#9AA0A2">* 06月仅 26 天（MTD），月活已基本饱和、未折算；趋势稳定无下滑</text>
+
+  <!-- ===== ② 改版成效 (right-top) ===== -->
+  <rect x="1040" y="108" width="640" height="430" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="1040" y="108" width="6" height="430" rx="3" fill="#10A37F"/>
+  <text x="1070" y="146" font-size="19" font-weight="700" fill="#0A0C0C">② 返佣模块改版成效（5 月上线）</text>
+  <text x="1070" y="172" font-size="13.5" fill="#6B7173">散入口收编为统一入口，用户成功迁移 — 正面案例</text>
+
+  <!-- old card -->
+  <rect x="1070" y="200" width="270" height="300" rx="6" fill="#F5F6F6" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="1090" y="234" font-size="14" font-weight="700" fill="#6B7173">旧 · 三个散入口合计</text>
+  <text x="1090" y="296" font-size="44" font-weight="700" fill="#0A0C0C">1.08万</text>
+  <text x="1090" y="324" font-size="13" fill="#6B7173">5 月 UV（去重）</text>
+  <line x1="1090" y1="350" x2="1320" y2="350" stroke="#E1E3E4" stroke-width="1"/>
+  <text x="1090" y="406" font-size="34" font-weight="700" fill="#8A5B12">0.21万</text>
+  <text x="1090" y="432" font-size="13" fill="#6B7173">6 月 UV（已被吃量）</text>
+  <text x="1090" y="470" font-size="12" fill="#9AA0A2">旧入口逐步退场</text>
+
+  <!-- arrow -->
+  <line x1="1346" y1="350" x2="1404" y2="350" stroke="#10A37F" stroke-width="3" marker-end="url(#arG)"/>
+  <text x="1375" y="338" font-size="12" font-weight="700" fill="#0B7355" text-anchor="middle">迁移</text>
+
+  <!-- new card -->
+  <rect x="1410" y="200" width="240" height="300" rx="6" fill="#E7F6F0" stroke="#10A37F" stroke-width="2"/>
+  <text x="1430" y="234" font-size="14" font-weight="700" fill="#0B7355">新 · 统一入口</text>
+  <text x="1430" y="296" font-size="44" font-weight="700" fill="#0B7355">0.98万</text>
+  <text x="1430" y="324" font-size="13" fill="#1A1E1F">5 月 UV（去重）</text>
+  <line x1="1430" y1="350" x2="1630" y2="350" stroke="#C7E7DB" stroke-width="1"/>
+  <text x="1430" y="406" font-size="34" font-weight="700" fill="#0B7355">1.22万</text>
+  <text x="1430" y="432" font-size="13" fill="#1A1E1F">6 月 UV ↑ 仍在涨</text>
+  <text x="1430" y="470" font-size="12" fill="#0B7355">全站第 5 高频</text>
+
+  <!-- ===== ③ 下钻漏斗 (left-bottom) ===== -->
+  <rect x="40" y="558" width="980" height="370" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="40" y="558" width="6" height="370" rx="3" fill="#10A37F"/>
+  <text x="70" y="596" font-size="19" font-weight="700" fill="#0A0C0C">③ 各模块下钻漏斗（6 月 UV · 到达率）</text>
+
+  <!-- funnel row 1 -->
+  <rect x="70" y="624" width="240" height="48" rx="5" fill="#10A37F"/>
+  <text x="86" y="654" font-size="15" font-weight="700" fill="#FFFFFF">模块 A · 入口 15.8k</text>
+  <line x1="316" y1="648" x2="356" y2="648" stroke="#4A5052" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="362" y="624" width="240" height="48" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="378" y="654" font-size="15" fill="#1A1E1F">详情 9.1k · 57%</text>
+  <line x1="608" y1="648" x2="648" y2="648" stroke="#4A5052" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="654" y="624" width="240" height="48" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="670" y="654" font-size="15" fill="#1A1E1F">交易 5.0k · 32%</text>
+
+  <!-- funnel row 2 -->
+  <rect x="70" y="688" width="240" height="48" rx="5" fill="#3B7DE0"/>
+  <text x="86" y="718" font-size="15" font-weight="700" fill="#FFFFFF">模块 B · 入口 11.0k</text>
+  <line x1="316" y1="712" x2="356" y2="712" stroke="#4A5052" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="362" y="688" width="240" height="48" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="378" y="718" font-size="15" fill="#1A1E1F">列表 7.3k · 66%</text>
+  <line x1="608" y1="712" x2="648" y2="712" stroke="#4A5052" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="654" y="688" width="240" height="48" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="670" y="718" font-size="15" fill="#1A1E1F">操作 2.4k · 22%</text>
+
+  <!-- funnel row 3 -->
+  <rect x="70" y="752" width="240" height="48" rx="5" fill="#7E57C2"/>
+  <text x="86" y="782" font-size="15" font-weight="700" fill="#FFFFFF">模块 C · 入口 20.8k</text>
+  <line x1="316" y1="776" x2="356" y2="776" stroke="#4A5052" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="362" y="752" width="240" height="48" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="378" y="782" font-size="15" fill="#1A1E1F">明细 6.5k · 31%</text>
+  <line x1="608" y1="776" x2="648" y2="776" stroke="#4A5052" stroke-width="2.5" marker-end="url(#ar)"/>
+  <rect x="654" y="752" width="240" height="48" rx="5" fill="#FBE9E7" stroke="#D9534F" stroke-width="2"/>
+  <text x="670" y="782" font-size="15" fill="#1A1E1F">奖励 &lt; 1%</text>
+
+  <line x1="70" y1="828" x2="990" y2="828" stroke="#E1E3E4" stroke-width="1"/>
+  <text x="70" y="858" font-size="13.5" fill="#1A1E1F">入口很热，但下钻一层即大幅衰减 — 信息架构偏深，核心数据埋在 3-4 层下里</text>
+  <text x="70" y="886" font-size="13" fill="#6B7173">行为特征：重查账（看钱 / 看高频）· 轻操作（换机 / 盘点低频）· 运营动作待撬动</text>
+
+  <!-- ===== ④ 沉默功能占比高 (right-bottom) ===== -->
+  <rect x="1040" y="558" width="640" height="370" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="1040" y="558" width="6" height="370" rx="3" fill="#E8A23D"/>
+  <text x="1070" y="596" font-size="19" font-weight="700" fill="#0A0C0C">④ 沉默功能占比高</text>
+
+  <rect x="1070" y="624" width="230" height="240" rx="6" fill="#FCF2E1" stroke="#E8A23D" stroke-width="2"/>
+  <text x="1185" y="730" font-size="58" font-weight="700" fill="#8A5B12" text-anchor="middle">43%</text>
+  <text x="1185" y="772" font-size="14" font-weight="700" fill="#8A5B12" text-anchor="middle">40 / 93 埋点</text>
+  <text x="1185" y="798" font-size="13" fill="#8A5B12" text-anchor="middle">UV &lt; 200</text>
+
+  <text x="1330" y="650" font-size="14" font-weight="700" fill="#0A0C0C">典型沉默页（UV 个位数）</text>
+  <text x="1330" y="690" font-size="13.5" fill="#1A1E1F">· 详情下钻：佣金 / 日志 / 信息</text>
+  <text x="1330" y="722" font-size="13.5" fill="#1A1E1F">· 申请中心各类申请入口</text>
+  <text x="1330" y="754" font-size="13.5" fill="#1A1E1F">· 活动 / 等级升级查询（UV ≈ 1）</text>
+  <line x1="1330" y1="784" x2="1650" y2="784" stroke="#E1E3E4" stroke-width="1"/>
+  <text x="1330" y="816" font-size="13" fill="#6B7173">近一半埋点几乎无人触达</text>
+  <text x="1070" y="900" font-size="13" fill="#6B7173">建议：高频数据上提、合并或下线死页；统一入口打法可复用</text>
+
+  <!-- ===== bottom data bar ===== -->
+  <rect x="40" y="946" width="1640" height="50" rx="6" fill="#10A37F"/>
+  <text x="80" y="977" font-size="15" font-weight="700" fill="#FFFFFF">大盘 04 月顶 2.26 万 UV · 稳定</text>
+  <line x1="430" y1="958" x2="430" y2="984" stroke="#7FCBB4" stroke-width="1.5"/>
+  <text x="470" y="977" font-size="15" font-weight="700" fill="#FFFFFF">返佣迁移成功 · 1.22 万入口</text>
+  <line x1="830" y1="958" x2="830" y2="984" stroke="#7FCBB4" stroke-width="1.5"/>
+  <text x="870" y="977" font-size="15" font-weight="700" fill="#FFFFFF">43% 埋点沉默</text>
+  <line x1="1110" y1="958" x2="1110" y2="984" stroke="#7FCBB4" stroke-width="1.5"/>
+  <text x="1150" y="977" font-size="15" font-weight="700" fill="#FFFFFF">重查账 · 轻操作</text>
+</svg>
