@@ -1,6 +1,6 @@
 # 工作图表视觉规范 · Geist 绿白
 
-> 适用：飞书画板（beautiful-feishu-whiteboard / lark-cli）里产出的**工作型图表**——全景图 / 骨架图 / 路线图 / 机制图等。源自「眼见为实」DESIGN.md（Geist/Vercel）。
+> 适用：飞书画板（beautiful-feishu-whiteboard / lark-cli）里产出的**工作型图表**——全景图 / 骨架图 / 路线图 / 机制图等。理念源自 Geist Design System / Vercel Design。
 > **一句话原则：让位于内容——用层级、留白、细边框和一个绿色组织信息，不用重色/阴影/装饰。**
 
 ## 一、调色板（只用这些 token，禁裸配色）
@@ -49,3 +49,8 @@
 
 ## 五、产出流程
 作 SVG（逻辑宽 ~1500–1700）→ `whiteboard-cli -i x.svg -o x.png -f svg` 渲染 → 看图修（溢出/对齐/边距/半张图）→ 推送 `whiteboard-cli --to openapi | lark-cli whiteboard +update`。
+
+换肤脚本见本仓库 `scripts/recolor_geist.py`（状态/结构型，含阴影删除+语义映射）与 `scripts/recolor_geist_cat.py`（分类型）——把 linen 配色的画板批量转成 Geist。
+
+---
+*本文第一节即完整 Geist 画板 token，自包含、可直接用。*

@@ -12,10 +12,13 @@ description: >
 
 好看的本质是约束：90% 中性灰阶 + 唯一一个绿做强调；边框优先于阴影；语义上色不是装饰上色。别自由配色、别加特效。
 
+## 依赖（必先装）
+本 skill 只是「Geist 约束层」，真正的画图/推送引擎是独立开源 skill **`beautiful-feishu-whiteboard`**（zarazhangrui）+ `lark-cli`。安装详见仓库 README。未装引擎时，本 skill 无法推送。
+
 ## 必读两份（动手前读，单一来源，不要凭记忆）
 
-1. **设计规范** `references/diagram-visual-spec.md`（本仓）／本机 `~/.claude/diagram-visual-spec.md` —— 调色板 token、视觉规则、四类范式、踩坑。**配色与构图一律按它。**
-2. **介质硬规则 + 命令** `references/RULES.md`（本仓）／本机 `~/.claude/skills/beautiful-feishu-whiteboard/RULES.md` —— 飞书 SVG 画板的硬限制 + 渲染/写入/校验的确切命令。**渲染和推送命令以它为准。**
+1. **设计规范** `~/.claude/diagram-visual-spec.md`（本仓库 `references/diagram-visual-spec.md`）—— 调色板 token、视觉规则、四类范式、踩坑。**配色与构图一律按它。**
+2. **介质硬规则 + 命令** `~/.claude/skills/beautiful-feishu-whiteboard/RULES.md`（本仓库 `references/RULES.md`）—— 飞书 SVG 画板的硬限制 + 渲染/写入/校验的确切命令。**渲染和推送命令以它为准。**
 
 > 关系：本 skill 负责「选范式 + 守 Geist 规范 + 保证可编辑」；beautiful-feishu-whiteboard 负责「介质硬规则 + 命令」。两份都读，配色只走 Geist 不走 35 色板。
 
@@ -39,10 +42,15 @@ description: >
 - 颜色只用 Geist token；**一图一主强调**（绿色只给最重要那一个点）；语义/分类按规范四档/五类上色。
 - 画板只放内容，**不要把指令/来源/范式名/“总结…”写到画布上**（那像作业抬头，那些放聊天回复里）。
 - 渲染：`whiteboard-cli -i x.svg -o x.png -f svg` → **看图修**（溢出/对齐/边距/数字贴边/半张图）→ 就地小改 SVG、一轮批量改完再重渲，别每改一处重渲、别整张重生成。
+- （可选）把现成的 linen 配色画板换成 Geist：`python3 scripts/recolor_geist.py <图>-linen.svg`（状态/结构型）或 `recolor_geist_cat.py`（分类型）。
 
 ## 第 3 步：推成飞书可编辑画板（必须可编辑，不是贴图）
-按 beautiful skill RULES.md 的写入命令：在飞书 doc 里插 `<whiteboard>` 块 → 拿 block_token → `whiteboard-cli --to openapi | lark-cli whiteboard +update --whiteboard-token <tok> --source - --input_format raw --overwrite --as user` 推 SVG。
-（给已有文档加顶部画板的完整命令见记忆 feishu-integration。）
+按 `references/RULES.md` 的写入命令：在飞书 doc 里插 `<whiteboard>` 块 → 拿 block_token → `whiteboard-cli --to openapi | lark-cli whiteboard +update --whiteboard-token <tok> --source - --input_format raw --overwrite --as user` 推 SVG。
+
+给**已有**文档加顶部画板：
+`lark-cli docs +update --doc <doc_tok> --command block_insert_after --block-id <首块完整id> --content '<whiteboard type="blank"></whiteboard>' --as user`
+→ 从返回里拿新块 `block_token` → 用上面的 `whiteboard +update` 推 SVG。中段插同理，`--block-id` 用目标段落块即可。
+> ⚠️ `--block-id` 必须用**完整 ID**（`GET /blocks` 拿到的长串），截短的会静默 no-op（返回 ok 却什么都没插）。
 
 ## 第 4 步：交付
 给他**两样**：① 飞书文档/画板链接；② 渲染图本身（方便不开文档就看）。
