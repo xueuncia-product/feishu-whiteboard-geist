@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" width="1600" height="980">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L10 4 L0 8 z" fill="#4A5052"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1600" height="980" fill="#FAFBFB"/>
+
+  <!-- title -->
+  <rect x="40" y="28" width="1520" height="60" rx="6" fill="#10A37F"/>
+  <text x="64" y="66" font-size="28" font-weight="700" fill="#FFFFFF">内容创作工具 · 讨论骨架</text>
+  <text x="1536" y="65" font-size="15" fill="#E7F6F0" text-anchor="end">只到模块层 · 做讨论锚点</text>
+
+  <!-- connectors (drawn first, under nodes) -->
+  <line x1="800" y1="490" x2="430" y2="270" stroke="#4A5052" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="800" y1="490" x2="800" y2="240" stroke="#4A5052" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="800" y1="490" x2="1170" y2="270" stroke="#4A5052" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="800" y1="540" x2="430" y2="760" stroke="#4A5052" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="800" y1="540" x2="800" y2="790" stroke="#4A5052" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="800" y1="540" x2="1170" y2="760" stroke="#4A5052" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- central hub -->
+  <rect x="650" y="465" width="300" height="100" rx="8" fill="#10A37F"/>
+  <text x="800" y="510" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle">内容创作工具</text>
+  <text x="800" y="540" font-size="14" fill="#E7F6F0" text-anchor="middle">6 大模块</text>
+
+  <!-- branch: 编辑器 (green) -->
+  <rect x="250" y="180" width="300" height="90" rx="6" fill="#FFFFFF" stroke="#10A37F" stroke-width="2"/>
+  <circle cx="282" cy="225" r="8" fill="#10A37F"/>
+  <text x="304" y="220" font-size="20" font-weight="700" fill="#0A0C0C">编辑器</text>
+  <text x="304" y="248" font-size="14" fill="#6B7173">富文本 · 块结构</text>
+
+  <!-- branch: AI 写作 (blue) -->
+  <rect x="650" y="150" width="300" height="90" rx="6" fill="#FFFFFF" stroke="#3B7DE0" stroke-width="2"/>
+  <circle cx="682" cy="195" r="8" fill="#3B7DE0"/>
+  <text x="704" y="190" font-size="20" font-weight="700" fill="#0A0C0C">AI 写作</text>
+  <text x="704" y="218" font-size="14" fill="#6B7173">续写 · 润色 · 改写</text>
+
+  <!-- branch: 素材库 (purple) -->
+  <rect x="1050" y="180" width="300" height="90" rx="6" fill="#FFFFFF" stroke="#7E57C2" stroke-width="2"/>
+  <circle cx="1082" cy="225" r="8" fill="#7E57C2"/>
+  <text x="1104" y="220" font-size="20" font-weight="700" fill="#0A0C0C">素材库</text>
+  <text x="1104" y="248" font-size="14" fill="#6B7173">图片 · 模板 · 引用</text>
+
+  <!-- branch: 协作 (amber) -->
+  <rect x="250" y="760" width="300" height="90" rx="6" fill="#FFFFFF" stroke="#E8A23D" stroke-width="2"/>
+  <circle cx="282" cy="805" r="8" fill="#E8A23D"/>
+  <text x="304" y="800" font-size="20" font-weight="700" fill="#0A0C0C">协作</text>
+  <text x="304" y="828" font-size="14" fill="#6B7173">评论 · 多人编辑</text>
+
+  <!-- branch: 发布分发 (blue) -->
+  <rect x="650" y="790" width="300" height="90" rx="6" fill="#FFFFFF" stroke="#3B7DE0" stroke-width="2"/>
+  <circle cx="682" cy="835" r="8" fill="#3B7DE0"/>
+  <text x="704" y="830" font-size="20" font-weight="700" fill="#0A0C0C">发布分发</text>
+  <text x="704" y="858" font-size="14" fill="#6B7173">多平台一键发</text>
+
+  <!-- branch: 数据分析 (green) -->
+  <rect x="1050" y="760" width="300" height="90" rx="6" fill="#FFFFFF" stroke="#10A37F" stroke-width="2"/>
+  <circle cx="1082" cy="805" r="8" fill="#10A37F"/>
+  <text x="1104" y="800" font-size="20" font-weight="700" fill="#0A0C0C">数据分析</text>
+  <text x="1104" y="828" font-size="14" fill="#6B7173">阅读 · 转化看板</text>
+</svg>

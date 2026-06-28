@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" width="1600" height="700">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L10 4 L0 8 z" fill="#4A5052"/>
+    </marker>
+    <marker id="arrowG" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L10 4 L0 8 z" fill="#10A37F"/>
+    </marker>
+    <marker id="arrowA" markerWidth="12" markerHeight="12" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0 0 L10 4 L0 8 z" fill="#E8A23D"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1600" height="700" fill="#FAFBFB"/>
+
+  <!-- title -->
+  <rect x="40" y="28" width="1520" height="60" rx="6" fill="#10A37F"/>
+  <text x="64" y="66" font-size="28" font-weight="700" fill="#FFFFFF">缓存读写 · 运转机制</text>
+  <text x="1536" y="65" font-size="15" fill="#E7F6F0" text-anchor="end">命中走绿 · 未命中走琥珀</text>
+
+  <!-- nodes -->
+  <rect x="80" y="280" width="280" height="160" rx="8" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="220" y="350" font-size="24" font-weight="700" fill="#0A0C0C" text-anchor="middle">应用</text>
+  <text x="220" y="382" font-size="14" fill="#6B7173" text-anchor="middle">发起读 / 写请求</text>
+
+  <rect x="660" y="280" width="280" height="160" rx="8" fill="#E7F6F0" stroke="#10A37F" stroke-width="2"/>
+  <text x="800" y="350" font-size="24" font-weight="700" fill="#0B7355" text-anchor="middle">缓存</text>
+  <text x="800" y="382" font-size="14" fill="#1A1E1F" text-anchor="middle">Redis · 热数据</text>
+
+  <rect x="1240" y="280" width="280" height="160" rx="8" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="1380" y="350" font-size="24" font-weight="700" fill="#0A0C0C" text-anchor="middle">数据库</text>
+  <text x="1380" y="382" font-size="14" fill="#6B7173" text-anchor="middle">MySQL · 全量</text>
+
+  <!-- 1. read request app -> cache -->
+  <line x1="360" y1="330" x2="650" y2="330" stroke="#4A5052" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="505" y="316" font-size="15" font-weight="700" fill="#1A1E1F" text-anchor="middle">① 读请求</text>
+
+  <!-- 2a. hit cache -> app (green) -->
+  <line x1="650" y1="400" x2="360" y2="400" stroke="#10A37F" stroke-width="3" marker-end="url(#arrowG)"/>
+  <text x="505" y="426" font-size="15" font-weight="700" fill="#0B7355" text-anchor="middle">②a 命中 → 直接返回</text>
+
+  <!-- 2b. miss cache -> db (amber) -->
+  <line x1="940" y1="330" x2="1230" y2="330" stroke="#E8A23D" stroke-width="3" marker-end="url(#arrowA)"/>
+  <text x="1085" y="316" font-size="15" font-weight="700" fill="#8A5B12" text-anchor="middle">②b 未命中 → 查库</text>
+
+  <!-- 3. db -> cache backfill -->
+  <line x1="1230" y1="400" x2="940" y2="400" stroke="#4A5052" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="1085" y="426" font-size="15" font-weight="700" fill="#1A1E1F" text-anchor="middle">③ 回填缓存</text>
+
+  <!-- bottom note strip -->
+  <rect x="80" y="520" width="1440" height="90" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <rect x="80" y="520" width="8" height="90" rx="4" fill="#10A37F"/>
+  <text x="120" y="558" font-size="17" font-weight="700" fill="#0A0C0C">核心逻辑</text>
+  <text x="120" y="588" font-size="15" fill="#1A1E1F">读优先查缓存：命中即返回（绿，快路径）；未命中才落库并回填，下次即变快路径。写请求同步更新缓存与库。</text>
+</svg>
