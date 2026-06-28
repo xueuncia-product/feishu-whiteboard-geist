@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1015" width="1600" height="1015">
+  <rect x="0" y="0" width="1600" height="1015" fill="#FAFBFB"/>
+
+  <!-- title -->
+  <rect x="40" y="28" width="1520" height="60" rx="6" fill="#10A37F"/>
+  <text x="64" y="66" font-size="28" font-weight="700" fill="#FFFFFF">AI 助手产品 · 体系全景</text>
+  <text x="1536" y="65" font-size="15" fill="#E7F6F0" text-anchor="end">地基 → 支柱 → 运营 → 终局</text>
+
+  <!-- Layer 1: 终局 -->
+  <rect x="40" y="120" width="170" height="150" rx="6" fill="#0A0C0C"/>
+  <text x="125" y="190" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">终局</text>
+  <text x="125" y="220" font-size="13" fill="#9AA0A2" text-anchor="middle">目标</text>
+  <rect x="230" y="120" width="640" height="150" rx="6" fill="#E7F6F0" stroke="#10A37F" stroke-width="2"/>
+  <text x="258" y="168" font-size="20" font-weight="700" fill="#0B7355">用户日活破百万</text>
+  <text x="258" y="200" font-size="14" fill="#1A1E1F">核心北极星指标，驱动所有上层投入</text>
+  <rect x="890" y="120" width="640" height="150" rx="6" fill="#E7F6F0" stroke="#10A37F" stroke-width="2"/>
+  <text x="918" y="168" font-size="20" font-weight="700" fill="#0B7355">付费转化率 8%</text>
+  <text x="918" y="200" font-size="14" fill="#1A1E1F">商业化收口，验证产品价值闭环</text>
+
+  <!-- Layer 2: 运营 -->
+  <rect x="40" y="290" width="170" height="150" rx="6" fill="#0A0C0C"/>
+  <text x="125" y="360" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">运营</text>
+  <text x="125" y="390" font-size="13" fill="#9AA0A2" text-anchor="middle">增长</text>
+  <rect x="230" y="290" width="410" height="150" rx="6" fill="#E9F1FC" stroke="#3B7DE0" stroke-width="2"/>
+  <text x="258" y="338" font-size="19" font-weight="700" fill="#2C5FB0">内容分发</text>
+  <text x="258" y="370" font-size="14" fill="#1A1E1F">推荐 + 搜索双引擎</text>
+  <rect x="670" y="290" width="410" height="150" rx="6" fill="#E9F1FC" stroke="#3B7DE0" stroke-width="2"/>
+  <text x="698" y="338" font-size="19" font-weight="700" fill="#2C5FB0">用户增长</text>
+  <text x="698" y="370" font-size="14" fill="#1A1E1F">裂变 + 留存运营</text>
+  <rect x="1110" y="290" width="420" height="150" rx="6" fill="#E9F1FC" stroke="#3B7DE0" stroke-width="2"/>
+  <text x="1138" y="338" font-size="19" font-weight="700" fill="#2C5FB0">商业化</text>
+  <text x="1138" y="370" font-size="14" fill="#1A1E1F">订阅 + API 计费</text>
+
+  <!-- Layer 3: 支柱 -->
+  <rect x="40" y="460" width="170" height="150" rx="6" fill="#0A0C0C"/>
+  <text x="125" y="530" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">支柱</text>
+  <text x="125" y="560" font-size="13" fill="#9AA0A2" text-anchor="middle">核心能力</text>
+  <rect x="230" y="460" width="300" height="150" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="258" y="508" font-size="19" font-weight="700" fill="#0A0C0C">对话引擎</text>
+  <text x="258" y="540" font-size="14" fill="#1A1E1F">多轮 · 流式输出</text>
+  <rect x="550" y="460" width="300" height="150" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="578" y="508" font-size="19" font-weight="700" fill="#0A0C0C">知识检索</text>
+  <text x="578" y="540" font-size="14" fill="#1A1E1F">RAG · 向量库</text>
+  <rect x="870" y="460" width="300" height="150" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="898" y="508" font-size="19" font-weight="700" fill="#0A0C0C">多模态</text>
+  <text x="898" y="540" font-size="14" fill="#1A1E1F">图 · 文 · 语音</text>
+  <rect x="1190" y="460" width="340" height="150" rx="6" fill="#F0ECF9" stroke="#7E57C2" stroke-width="2"/>
+  <text x="1218" y="508" font-size="19" font-weight="700" fill="#7E57C2">记忆系统</text>
+  <text x="1218" y="540" font-size="14" fill="#1A1E1F">待共创 · 长期记忆</text>
+
+  <!-- Layer 4: 地基 -->
+  <rect x="40" y="630" width="170" height="150" rx="6" fill="#0A0C0C"/>
+  <text x="125" y="700" font-size="22" font-weight="700" fill="#FFFFFF" text-anchor="middle">地基</text>
+  <text x="125" y="730" font-size="13" fill="#9AA0A2" text-anchor="middle">基础设施</text>
+  <rect x="230" y="630" width="300" height="150" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="258" y="678" font-size="19" font-weight="700" fill="#0A0C0C">模型层</text>
+  <text x="258" y="710" font-size="14" fill="#1A1E1F">自研 + 第三方</text>
+  <rect x="550" y="630" width="300" height="150" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="578" y="678" font-size="19" font-weight="700" fill="#0A0C0C">数据层</text>
+  <text x="578" y="710" font-size="14" fill="#1A1E1F">采集 · 清洗 · 标注</text>
+  <rect x="870" y="630" width="300" height="150" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="898" y="678" font-size="19" font-weight="700" fill="#0A0C0C">算力</text>
+  <text x="898" y="710" font-size="14" fill="#1A1E1F">GPU 弹性调度</text>
+  <rect x="1190" y="630" width="340" height="150" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
+  <text x="1218" y="678" font-size="19" font-weight="700" fill="#0A0C0C">安全合规</text>
+  <text x="1218" y="710" font-size="14" fill="#1A1E1F">审核 · 隐私 · 备案</text>
+
+  <!-- data bar -->
+  <rect x="40" y="815" width="1490" height="76" rx="6" fill="#10A37F"/>
+  <text x="120" y="852" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+  <text x="120" y="878" font-size="14" fill="#E7F6F0" text-anchor="middle">层架构</text>
+  <text x="430" y="852" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle">13</text>
+  <text x="430" y="878" font-size="14" fill="#E7F6F0" text-anchor="middle">核心模块</text>
+  <text x="740" y="852" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+  <text x="740" y="878" font-size="14" fill="#E7F6F0" text-anchor="middle">待共创项</text>
+  <text x="1150" y="852" font-size="30" font-weight="700" fill="#FFFFFF" text-anchor="middle">8%</text>
+  <text x="1150" y="878" font-size="14" fill="#E7F6F0" text-anchor="middle">付费目标</text>
+</svg>
