@@ -1,3 +1,5 @@
+**[English](README_EN.md) | 中文**
+
 # feishu-whiteboard-geist
 
 一个 **Claude Code skill**：把一段想法/内容，按 **Geist 绿白**工作图表规范，自动选合适的画板范式，产出 SVG → 渲染回看修 → 推成一张**飞书可编辑画板**，最后给文档链接 + 渲染图。
