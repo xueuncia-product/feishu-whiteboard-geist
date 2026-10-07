@@ -37,9 +37,9 @@ Three-tier sentiment cards + four key signals (top color bar + source) + competi
 
 <img src="assets/board-matrix.svg" width="900" alt="dual-axis matrix example"/>
 
-## Four base paradigms
+## What it can draw
 
-Internally the skill selects among these 4 base paradigms; combined, they form the composite boards above:
+The skill first decides what the reader needs to understand (state / handoff / cause / trade-off / dependency / emotion), then picks:
 
 | Content shape | Paradigm |
 |---|---|
@@ -47,6 +47,10 @@ Internally the skill selects among these 4 base paradigms; combined, they form t
 | A discussion anchor, only down to the module level | **Skeleton** |
 | Phased progression, scene-by-scene flow | **Roadmap** |
 | How a single mechanism works | **Mechanism** |
+| Data to quantify: comparison / share / trend / flow | **Quant charts** (bar+line / gauge / radar / sankey / stacked area) |
+| State transitions, cross-role handoffs, release slicing, root cause, etc. | **10 extended patterns**: state machine · swimlane · story map · fishbone · quadrant · dependency graph · Gantt · funnel · timeline · user journey |
+
+The 10 extended patterns are adapted from [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) (MIT), re-skinned to Geist green-and-white under Feishu whiteboard constraints.
 
 ## Dependencies
 
@@ -62,22 +66,14 @@ Internally the skill selects among these 4 base paradigms; combined, they form t
 git clone https://github.com/zarazhangrui/beautiful-feishu-whiteboard.git \
   ~/.claude/skills/beautiful-feishu-whiteboard
 
-# 1. Clone this repo
-git clone https://github.com/xueuncia-product/feishu-whiteboard-geist.git
-cd feishu-whiteboard-geist
-
-# 2. The skill itself + the recolor scripts
-mkdir -p ~/.claude/skills/feishu-whiteboard-geist
-cp SKILL.md ~/.claude/skills/feishu-whiteboard-geist/SKILL.md
-cp -r scripts ~/.claude/skills/feishu-whiteboard-geist/scripts
-
-# 3. The Geist design spec (SKILL.md references ~/.claude/diagram-visual-spec.md)
-cp references/diagram-visual-spec.md ~/.claude/diagram-visual-spec.md
-
-# 4. (Optional) references/RULES.md is a copy of the engine skill's RULES.md, for offline reference.
+# 1. Clone the whole repo straight into the skill directory
+git clone https://github.com/xueuncia-product/feishu-whiteboard-geist.git \
+  ~/.claude/skills/feishu-whiteboard-geist
 ```
 
-> SKILL.md uses absolute `~/.claude/...` paths. If your directory layout differs, adjust the paths above accordingly.
+Then say "draw this on a Feishu whiteboard: ..." in Claude Code. SKILL.md references the spec and scripts by repo-relative paths, so no extra copying is needed.
+
+**Update**: `cd ~/.claude/skills/feishu-whiteboard-geist && git pull`
 
 ## Layout
 
@@ -85,16 +81,22 @@ cp references/diagram-visual-spec.md ~/.claude/diagram-visual-spec.md
 SKILL.md                          # the skill itself
 references/diagram-visual-spec.md # Geist green-and-white palette + visual spec (self-contained)
 references/RULES.md               # Feishu SVG whiteboard hard limits + render/push commands (copy of the engine skill's RULES.md)
+references/patterns.md            # 10 extended patterns: when to use, how to draw, limits, anti-patterns
+references/quant-charts.md        # quant chart selection and usage
+scripts/geist_layout.py           # layout helpers for composite boards (cards/tables/KPI strips, font clamping built in)
+scripts/quant_charts.py           # generators for 5 quant chart types
+scripts/check_fonts.py            # pre-push gate: fails on font size < 13px or non-integer
 scripts/recolor_geist.py          # status/structure recolor: linen palette → Geist
 scripts/recolor_geist_cat.py      # categorical recolor
 assets/                           # 4 example board SVGs (the ones shown in the README, all fictional)
 ```
 
-## Three hard pitfalls
+## Four hard pitfalls
 
 1. **No emoji in SVG text** — whiteboard-cli silently breaks the image on emoji.
 2. **Exported-PNG text color is unreliable** (white text often turns black) — verify colors online or use `--output_as raw`.
-3. **Don't improvise colors** — use only the tokens from `diagram-visual-spec.md`.
+3. **Font size < 13px wraps on Feishu online** and local renders can't catch it — run `scripts/check_fonts.py` before pushing and check the online image after.
+4. **Don't improvise colors** — use only the tokens from `diagram-visual-spec.md`.
 
 ## Credits
 

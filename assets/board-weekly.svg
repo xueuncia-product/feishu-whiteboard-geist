@@ -27,34 +27,34 @@
   <rect x="40" y="314" width="399" height="200" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
   <rect x="40" y="314" width="399" height="6" rx="3" fill="#D9534F"/>
   <text x="60" y="352" font-size="16" font-weight="700" fill="#B23B36">客情 · 结算到账故障</text>
-  <text x="60" y="386" font-size="13.5" fill="#1A1E1F">6/23-24 集中爆发：付款↔</text>
-  <text x="60" y="410" font-size="13.5" fill="#1A1E1F">钱包 "客户付款</text>
-  <text x="60" y="434" font-size="13.5" fill="#1A1E1F">一两天未到账"+ 当日加载失败</text>
-  <text x="60" y="494" font-size="12.5" fill="#9AA0A2">来源 社媒 · 一线投诉</text>
+  <text x="60" y="386" font-size="13" fill="#1A1E1F">6/23-24 集中爆发：付款↔</text>
+  <text x="60" y="410" font-size="13" fill="#1A1E1F">钱包 "客户付款</text>
+  <text x="60" y="434" font-size="13" fill="#1A1E1F">一两天未到账"+ 当日加载失败</text>
+  <text x="60" y="494" font-size="13" fill="#9AA0A2">来源 社媒 · 一线投诉</text>
   <!-- card 2 琥珀 -->
   <rect x="454" y="314" width="399" height="200" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
   <rect x="454" y="314" width="399" height="6" rx="3" fill="#E8A23D"/>
   <text x="474" y="352" font-size="16" font-weight="700" fill="#8A5B12">竞品 · 本周动态</text>
-  <text x="474" y="386" font-size="13.5" fill="#1A1E1F">竞品 A 连推卡受理 / 钱包付；</text>
-  <text x="474" y="410" font-size="13.5" fill="#1A1E1F">代理流向竞品 B；竞品 C</text>
-  <text x="474" y="434" font-size="13.5" fill="#1A1E1F">高息揽存</text>
-  <text x="474" y="494" font-size="12.5" fill="#9AA0A2">来源 官博 / 媒体 / 社媒</text>
+  <text x="474" y="386" font-size="13" fill="#1A1E1F">竞品 A 连推卡受理 / 钱包付；</text>
+  <text x="474" y="410" font-size="13" fill="#1A1E1F">代理流向竞品 B；竞品 C</text>
+  <text x="474" y="434" font-size="13" fill="#1A1E1F">高息揽存</text>
+  <text x="474" y="494" font-size="13" fill="#9AA0A2">来源 官博 / 媒体 / 社媒</text>
   <!-- card 3 绿 -->
   <rect x="868" y="314" width="399" height="200" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
   <rect x="868" y="314" width="399" height="6" rx="3" fill="#10A37F"/>
   <text x="888" y="352" font-size="16" font-weight="700" fill="#0B7355">商户贷 · 跨行业分期</text>
-  <text x="888" y="386" font-size="13.5" fill="#1A1E1F">能源 / 手机 / 车辆资产升温</text>
-  <text x="888" y="410" font-size="13.5" fill="#1A1E1F">（设备即抵押 + 远程锁机）；</text>
-  <text x="888" y="434" font-size="13.5" fill="#1A1E1F">竞品上线出行资产分期</text>
-  <text x="888" y="494" font-size="12.5" fill="#9AA0A2">来源 媒体 / 官网</text>
+  <text x="888" y="386" font-size="13" fill="#1A1E1F">能源 / 手机 / 车辆资产升温</text>
+  <text x="888" y="410" font-size="13" fill="#1A1E1F">（设备即抵押 + 远程锁机）；</text>
+  <text x="888" y="434" font-size="13" fill="#1A1E1F">竞品上线出行资产分期</text>
+  <text x="888" y="494" font-size="13" fill="#9AA0A2">来源 媒体 / 官网</text>
   <!-- card 4 蓝 -->
   <rect x="1282" y="314" width="398" height="200" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
   <rect x="1282" y="314" width="398" height="6" rx="3" fill="#3B7DE0"/>
   <text x="1302" y="352" font-size="16" font-weight="700" fill="#2C5FB0">政策 / 市场 · 多重冲击</text>
-  <text x="1302" y="386" font-size="13.5" fill="#1A1E1F">独家绑定新规（或致代理退出）；</text>
-  <text x="1302" y="410" font-size="13.5" fill="#1A1E1F">市占率封顶；行业清机；</text>
-  <text x="1302" y="434" font-size="13.5" fill="#1A1E1F">部分市场关停 · 监管趋严</text>
-  <text x="1302" y="494" font-size="12.5" fill="#9AA0A2">来源 监管 / 媒体</text>
+  <text x="1302" y="386" font-size="13" fill="#1A1E1F">独家绑定新规（或致代理退出）；</text>
+  <text x="1302" y="410" font-size="13" fill="#1A1E1F">市占率封顶；行业清机；</text>
+  <text x="1302" y="434" font-size="13" fill="#1A1E1F">部分市场关停 · 监管趋严</text>
+  <text x="1302" y="494" font-size="13" fill="#9AA0A2">来源 监管 / 媒体</text>
 
   <!-- 三、竞品盯防排序 -->
   <text x="40" y="556" font-size="17" font-weight="700" fill="#0A0C0C">三、竞品盯防排序（对核心 POS 业务威胁）</text>
@@ -84,7 +84,7 @@
 
   <!-- bottom bar -->
   <rect x="40" y="982" width="1640" height="50" rx="6" fill="#10A37F"/>
-  <text x="80" y="1013" font-size="14.5" font-weight="700" fill="#FFFFFF">实时抓取 社媒 / 应用商店 / 媒体核实</text>
+  <text x="80" y="1013" font-size="14" font-weight="700" fill="#FFFFFF">实时抓取 社媒 / 应用商店 / 媒体核实</text>
   <line x1="620" y1="994" x2="620" y2="1020" stroke="#7FCBB4" stroke-width="1.5"/>
-  <text x="660" y="1013" font-size="14.5" font-weight="700" fill="#FFFFFF">业务团队周会 · 对外市场情报（每条附渠道与原帖链接）</text>
+  <text x="660" y="1013" font-size="14" font-weight="700" fill="#FFFFFF">业务团队周会 · 对外市场情报（每条附渠道与原帖链接）</text>
 </svg>

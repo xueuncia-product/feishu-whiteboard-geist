@@ -37,9 +37,9 @@
 
 <img src="assets/board-matrix.svg" width="900" alt="双坐标分层示意"/>
 
-## 四种基础范式
+## 能画哪些图
 
-skill 内部按这 4 种基础范式选型，组合后即上面那类复合工作板：
+skill 先判断「读者要看懂的是什么」（状态 / 交接 / 归因 / 取舍 / 依赖 / 情绪），再从下面选型：
 
 | 内容形态 | 范式 |
 |---|---|
@@ -47,6 +47,10 @@ skill 内部按这 4 种基础范式选型，组合后即上面那类复合工�
 | 讨论锚点、只到模块层 | **骨架图** |
 | 阶段推进、分场流程 | **路线图** |
 | 一个机制怎么运转 | **机制图** |
+| 有数据要量化：对比 / 占比 / 趋势 / 流量 | **定量图表**（柱+折线 / 仪表盘 / 雷达 / 桑基 / 堆叠面积） |
+| 状态流转、跨角色交接、分期、归因等 | **扩展 10 种**：状态机 · 泳道 · 故事地图 · 鱼骨 · 象限 · 依赖图 · 甘特 · 漏斗 · 时间轴 · 用户旅程 |
+
+扩展 10 种的画法改编自 [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)（MIT），已换成 Geist 绿白 + 飞书画板硬限制。
 
 ## 依赖
 
@@ -62,22 +66,14 @@ skill 内部按这 4 种基础范式选型，组合后即上面那类复合工�
 git clone https://github.com/zarazhangrui/beautiful-feishu-whiteboard.git \
   ~/.claude/skills/beautiful-feishu-whiteboard
 
-# 1. 拉本仓
-git clone https://github.com/xueuncia-product/feishu-whiteboard-geist.git
-cd feishu-whiteboard-geist
-
-# 2. skill 本体 + 换肤脚本
-mkdir -p ~/.claude/skills/feishu-whiteboard-geist
-cp SKILL.md ~/.claude/skills/feishu-whiteboard-geist/SKILL.md
-cp -r scripts ~/.claude/skills/feishu-whiteboard-geist/scripts
-
-# 3. Geist 设计规范（skill 正文引用 ~/.claude/diagram-visual-spec.md）
-cp references/diagram-visual-spec.md ~/.claude/diagram-visual-spec.md
-
-# 4. （可选）本仓 references/RULES.md 是引擎 skill RULES.md 的副本，供离线查阅。
+# 1. 整个仓库直接克隆成 skill 目录
+git clone https://github.com/xueuncia-product/feishu-whiteboard-geist.git \
+  ~/.claude/skills/feishu-whiteboard-geist
 ```
 
-> SKILL.md 里用的是 `~/.claude/...` 绝对路径。如果你的目录布局不同，按上面路径对应调整即可。
+装完在 Claude Code 里说「用飞书画板画一下 xxx」即可触发。SKILL.md 引用的规范、脚本都用仓库内相对路径，无需再拷文件。
+
+**更新**：`cd ~/.claude/skills/feishu-whiteboard-geist && git pull`
 
 ## 目录
 
@@ -85,16 +81,22 @@ cp references/diagram-visual-spec.md ~/.claude/diagram-visual-spec.md
 SKILL.md                          # skill 本体
 references/diagram-visual-spec.md # Geist 绿白调色板 + 视觉规范（自包含）
 references/RULES.md               # 飞书 SVG 画板硬限制 + 渲染/推送命令（引擎 skill RULES.md 的副本）
+references/patterns.md            # 扩展 10 种范式：选型、画法、上限、反模式
+references/quant-charts.md        # 定量图表选型与用法
+scripts/geist_layout.py           # 复合信息板布局库（卡片/表格/KPI 条，字号钳制已内建）
+scripts/quant_charts.py           # 5 类定量图表生成器
+scripts/check_fonts.py            # 推送前硬闸：字号 < 13px 或非整数即报错
 scripts/recolor_geist.py          # 状态/结构型换肤：linen 配色 → Geist
 scripts/recolor_geist_cat.py      # 分类型换肤
 assets/                           # 4 张示例工作板 SVG（README 里展示的那几张，全虚构）
 ```
 
-## 三条铁坑
+## 四条铁坑
 
 1. **SVG 文字里禁 emoji**——whiteboard-cli 遇 emoji 会静默断图。
 2. **导出 PNG 文字颜色不可信**（白字常变黑）——核验颜色看线上或用 `--output_as raw`。
-3. **配色不要自由发挥**——只用 `diagram-visual-spec.md` 的 token。
+3. **字号 < 13px 会在飞书线上折行**，本地渲染查不出——推前跑 `scripts/check_fonts.py`，推后看线上图。
+4. **配色不要自由发挥**——只用 `diagram-visual-spec.md` 的 token。
 
 ## 致谢
 

@@ -18,7 +18,7 @@
   <rect x="40" y="108" width="980" height="430" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
   <rect x="40" y="108" width="6" height="430" rx="3" fill="#10A37F"/>
   <text x="70" y="146" font-size="19" font-weight="700" fill="#0A0C0C">① 大盘活跃趋势</text>
-  <text x="70" y="172" font-size="13.5" fill="#6B7173">全 App 月度活跃总数（万）· 缓升后走平、稳定在 ~2.2 万（非回落）</text>
+  <text x="70" y="172" font-size="13" fill="#6B7173">全 App 月度活跃总数（万）· 缓升后走平、稳定在 ~2.2 万（非回落）</text>
 
   <!-- bars baseline y=470 -->
   <line x1="80" y1="470" x2="980" y2="470" stroke="#E1E3E4" stroke-width="1.5"/>
@@ -46,13 +46,13 @@
   <rect x="810" y="276" width="92" height="194" rx="3" fill="#FCF2E1" stroke="#E8A23D" stroke-width="2" stroke-dasharray="6 4"/>
   <text x="856" y="264" font-size="18" font-weight="700" fill="#8A5B12" text-anchor="middle">2.19</text>
   <text x="856" y="494" font-size="13" fill="#8A5B12" text-anchor="middle">06月*</text>
-  <text x="70" y="524" font-size="12.5" fill="#9AA0A2">* 06月仅 26 天（MTD），月活已基本饱和、未折算；趋势稳定无下滑</text>
+  <text x="70" y="524" font-size="13" fill="#9AA0A2">* 06月仅 26 天（MTD），月活已基本饱和、未折算；趋势稳定无下滑</text>
 
   <!-- ===== ② 改版成效 (right-top) ===== -->
   <rect x="1040" y="108" width="640" height="430" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
   <rect x="1040" y="108" width="6" height="430" rx="3" fill="#10A37F"/>
   <text x="1070" y="146" font-size="19" font-weight="700" fill="#0A0C0C">② 返佣模块改版成效（5 月上线）</text>
-  <text x="1070" y="172" font-size="13.5" fill="#6B7173">散入口收编为统一入口，用户成功迁移 — 正面案例</text>
+  <text x="1070" y="172" font-size="13" fill="#6B7173">散入口收编为统一入口，用户成功迁移 — 正面案例</text>
 
   <!-- old card -->
   <rect x="1070" y="200" width="270" height="300" rx="6" fill="#F5F6F6" stroke="#E1E3E4" stroke-width="2"/>
@@ -62,11 +62,11 @@
   <line x1="1090" y1="350" x2="1320" y2="350" stroke="#E1E3E4" stroke-width="1"/>
   <text x="1090" y="406" font-size="34" font-weight="700" fill="#8A5B12">0.21万</text>
   <text x="1090" y="432" font-size="13" fill="#6B7173">6 月 UV（已被吃量）</text>
-  <text x="1090" y="470" font-size="12" fill="#9AA0A2">旧入口逐步退场</text>
+  <text x="1090" y="470" font-size="13" fill="#9AA0A2">旧入口逐步退场</text>
 
   <!-- arrow -->
   <line x1="1346" y1="350" x2="1404" y2="350" stroke="#10A37F" stroke-width="3" marker-end="url(#arG)"/>
-  <text x="1375" y="338" font-size="12" font-weight="700" fill="#0B7355" text-anchor="middle">迁移</text>
+  <text x="1375" y="338" font-size="13" font-weight="700" fill="#0B7355" text-anchor="middle">迁移</text>
 
   <!-- new card -->
   <rect x="1410" y="200" width="240" height="300" rx="6" fill="#E7F6F0" stroke="#10A37F" stroke-width="2"/>
@@ -76,7 +76,7 @@
   <line x1="1430" y1="350" x2="1630" y2="350" stroke="#C7E7DB" stroke-width="1"/>
   <text x="1430" y="406" font-size="34" font-weight="700" fill="#0B7355">1.22万</text>
   <text x="1430" y="432" font-size="13" fill="#1A1E1F">6 月 UV ↑ 仍在涨</text>
-  <text x="1430" y="470" font-size="12" fill="#0B7355">全站第 5 高频</text>
+  <text x="1430" y="470" font-size="13" fill="#0B7355">全站第 5 高频</text>
 
   <!-- ===== ③ 下钻漏斗 (left-bottom) ===== -->
   <rect x="40" y="558" width="980" height="370" rx="6" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
@@ -114,7 +114,7 @@
   <text x="670" y="782" font-size="15" fill="#1A1E1F">奖励 &lt; 1%</text>
 
   <line x1="70" y1="828" x2="990" y2="828" stroke="#E1E3E4" stroke-width="1"/>
-  <text x="70" y="858" font-size="13.5" fill="#1A1E1F">入口很热，但下钻一层即大幅衰减 — 信息架构偏深，核心数据埋在 3-4 层下里</text>
+  <text x="70" y="858" font-size="13" fill="#1A1E1F">入口很热，但下钻一层即大幅衰减 — 信息架构偏深，核心数据埋在 3-4 层下里</text>
   <text x="70" y="886" font-size="13" fill="#6B7173">行为特征：重查账（看钱 / 看高频）· 轻操作（换机 / 盘点低频）· 运营动作待撬动</text>
 
   <!-- ===== ④ 沉默功能占比高 (right-bottom) ===== -->
@@ -128,9 +128,9 @@
   <text x="1185" y="798" font-size="13" fill="#8A5B12" text-anchor="middle">UV &lt; 200</text>
 
   <text x="1330" y="650" font-size="14" font-weight="700" fill="#0A0C0C">典型沉默页（UV 个位数）</text>
-  <text x="1330" y="690" font-size="13.5" fill="#1A1E1F">· 详情下钻：佣金 / 日志 / 信息</text>
-  <text x="1330" y="722" font-size="13.5" fill="#1A1E1F">· 申请中心各类申请入口</text>
-  <text x="1330" y="754" font-size="13.5" fill="#1A1E1F">· 活动 / 等级升级查询（UV ≈ 1）</text>
+  <text x="1330" y="690" font-size="13" fill="#1A1E1F">· 详情下钻：佣金 / 日志 / 信息</text>
+  <text x="1330" y="722" font-size="13" fill="#1A1E1F">· 申请中心各类申请入口</text>
+  <text x="1330" y="754" font-size="13" fill="#1A1E1F">· 活动 / 等级升级查询（UV ≈ 1）</text>
   <line x1="1330" y1="784" x2="1650" y2="784" stroke="#E1E3E4" stroke-width="1"/>
   <text x="1330" y="816" font-size="13" fill="#6B7173">近一半埋点几乎无人触达</text>
   <text x="1070" y="900" font-size="13" fill="#6B7173">建议：高频数据上提、合并或下线死页；统一入口打法可复用</text>

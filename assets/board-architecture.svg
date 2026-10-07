@@ -45,7 +45,7 @@
   <text x="1115" y="247" font-size="15" font-weight="700" fill="#2C5FB0" text-anchor="middle">团队 D</text>
   <rect x="1182" y="212" width="135" height="58" rx="4" fill="#FFFFFF" stroke="#3B7DE0" stroke-width="1.5"/>
   <text x="1249" y="247" font-size="15" font-weight="700" fill="#2C5FB0" text-anchor="middle">团队 E</text>
-  <text x="555" y="294" font-size="12" fill="#6B7173">前 4 = 拓新主线（拓新为主+养护为辅）  ·  后 2 = 养护线（纯养护）</text>
+  <text x="555" y="294" font-size="13" fill="#6B7173">前 4 = 拓新主线（拓新为主+养护为辅）  ·  后 2 = 养护线（纯养护）</text>
 
   <!-- C -->
   <rect x="1355" y="150" width="325" height="40" rx="5" fill="#7E57C2"/>
@@ -64,7 +64,7 @@
   <!-- A -->
   <rect x="165" y="350" width="350" height="52" rx="5" fill="#10A37F"/>
   <text x="185" y="376" font-size="16" font-weight="700" fill="#FFFFFF">主平台 · Owner 甲</text>
-  <text x="185" y="394" font-size="11.5" fill="#E7F6F0">管外部代理：佣金 / 库存 / 提现机制</text>
+  <text x="185" y="394" font-size="13" fill="#E7F6F0">管外部代理：佣金 / 库存 / 提现机制</text>
   <rect x="165" y="406" width="350" height="236" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
   <text x="185" y="438" font-size="14" fill="#1A1E1F">返佣 / 打款罚款 / 提现</text>
   <text x="185" y="468" font-size="14" fill="#1A1E1F">总代分润 · 清退 · 罚金</text>
@@ -77,7 +77,7 @@
   <!-- B -->
   <rect x="535" y="350" width="800" height="52" rx="5" fill="#10A37F"/>
   <text x="555" y="376" font-size="16" font-weight="700" fill="#FFFFFF">协作台 · Owner 乙</text>
-  <text x="555" y="394" font-size="11.5" fill="#E7F6F0">管内部员工日常作业：KPI / 绩效工资机制</text>
+  <text x="555" y="394" font-size="13" fill="#E7F6F0">管内部员工日常作业：KPI / 绩效工资机制</text>
   <rect x="535" y="406" width="800" height="236" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
   <text x="555" y="438" font-size="14" fill="#1A1E1F">拜访 · 陪访 · 审核</text>
   <text x="555" y="468" font-size="14" fill="#1A1E1F">早会打卡</text>
@@ -94,7 +94,7 @@
   <!-- C -->
   <rect x="1355" y="350" width="325" height="52" rx="5" fill="#7E57C2"/>
   <text x="1375" y="376" font-size="16" font-weight="700" fill="#FFFFFF">子CRM · Owner 丙</text>
-  <text x="1375" y="394" font-size="11.5" fill="#F0ECF9">商户贷销售工具 · 自建为主</text>
+  <text x="1375" y="394" font-size="13" fill="#F0ECF9">商户贷销售工具 · 自建为主</text>
   <rect x="1355" y="406" width="325" height="236" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
   <text x="1375" y="438" font-size="14" fill="#1A1E1F">登录 Staff / CDL</text>
   <text x="1375" y="468" font-size="14" fill="#1A1E1F">账户层级 Admin→Manager</text>
@@ -127,61 +127,61 @@
   <rect x="1355" y="662" width="325" height="118" rx="5" fill="#F0ECF9" stroke="#7E57C2" stroke-width="2"/>
   <text x="1375" y="690" font-size="14" font-weight="700" fill="#7E57C2">子CRM 仅复用这 2 项：</text>
   <text x="1375" y="722" font-size="14" fill="#1A1E1F">贷款商户列表 · 贷款计算器</text>
-  <text x="1375" y="752" font-size="12.5" fill="#6B7173">（子CRM 其余功能均自建）</text>
+  <text x="1375" y="752" font-size="13" fill="#6B7173">（子CRM 其余功能均自建）</text>
 
   <!-- ===== Row 4: 能力层 ===== -->
   <rect x="165" y="800" width="362" height="46" rx="5" fill="#10A37F"/>
   <text x="185" y="822" font-size="15" font-weight="700" fill="#FFFFFF">指标管理平台 · 现有</text>
-  <text x="185" y="838" font-size="11" fill="#E7F6F0">Owner 丁</text>
+  <text x="185" y="838" font-size="13" fill="#E7F6F0">Owner 丁</text>
   <rect x="165" y="850" width="362" height="120" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
-  <text x="185" y="882" font-size="13.5" fill="#1A1E1F">Metric Admin · B端内部</text>
-  <text x="185" y="910" font-size="13.5" fill="#1A1E1F">大数据 · 后端指标效率</text>
-  <text x="185" y="938" font-size="13.5" fill="#6B7173">查询统计 / 指标表注册</text>
+  <text x="185" y="882" font-size="13" fill="#1A1E1F">Metric Admin · B端内部</text>
+  <text x="185" y="910" font-size="13" fill="#1A1E1F">大数据 · 后端指标效率</text>
+  <text x="185" y="938" font-size="13" fill="#6B7173">查询统计 / 指标表注册</text>
 
   <rect x="547" y="800" width="362" height="46" rx="5" fill="#10A37F"/>
   <text x="567" y="822" font-size="15" font-weight="700" fill="#FFFFFF">指标配置管理平台</text>
   <rect x="800" y="808" width="92" height="30" rx="15" fill="#FCF2E1"/>
-  <text x="846" y="828" font-size="12" font-weight="700" fill="#8A5B12" text-anchor="middle">待建</text>
+  <text x="846" y="828" font-size="13" font-weight="700" fill="#8A5B12" text-anchor="middle">待建</text>
   <rect x="547" y="850" width="362" height="120" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
-  <text x="567" y="882" font-size="13.5" fill="#1A1E1F">指标定义 / 口径 / 数据源</text>
-  <text x="567" y="910" font-size="13.5" fill="#1A1E1F">展示配置 / 行级权限 / 下钻</text>
-  <text x="567" y="938" font-size="13.5" font-weight="700" fill="#0B7355">本工作线 · 待建</text>
+  <text x="567" y="882" font-size="13" fill="#1A1E1F">指标定义 / 口径 / 数据源</text>
+  <text x="567" y="910" font-size="13" fill="#1A1E1F">展示配置 / 行级权限 / 下钻</text>
+  <text x="567" y="938" font-size="13" font-weight="700" fill="#0B7355">本工作线 · 待建</text>
 
   <rect x="929" y="800" width="362" height="46" rx="5" fill="#10A37F"/>
   <text x="949" y="822" font-size="15" font-weight="700" fill="#FFFFFF">数据看板搭建平台</text>
   <rect x="1182" y="808" width="92" height="30" rx="15" fill="#FCF2E1"/>
-  <text x="1228" y="828" font-size="12" font-weight="700" fill="#8A5B12" text-anchor="middle">待建</text>
+  <text x="1228" y="828" font-size="13" font-weight="700" fill="#8A5B12" text-anchor="middle">待建</text>
   <rect x="929" y="850" width="362" height="120" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
-  <text x="949" y="882" font-size="13.5" fill="#1A1E1F">卡片 / 列表 / 看板</text>
-  <text x="949" y="910" font-size="13.5" fill="#1A1E1F">拖拽式可视化搭建</text>
-  <text x="949" y="938" font-size="13.5" font-weight="700" fill="#0B7355">本工作线 · 待建</text>
+  <text x="949" y="882" font-size="13" fill="#1A1E1F">卡片 / 列表 / 看板</text>
+  <text x="949" y="910" font-size="13" fill="#1A1E1F">拖拽式可视化搭建</text>
+  <text x="949" y="938" font-size="13" font-weight="700" fill="#0B7355">本工作线 · 待建</text>
 
   <rect x="1311" y="800" width="369" height="46" rx="5" fill="#10A37F"/>
   <text x="1331" y="822" font-size="15" font-weight="700" fill="#FFFFFF">活动任务配置平台</text>
   <rect x="1311" y="850" width="369" height="120" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
-  <text x="1331" y="882" font-size="13.5" fill="#1A1E1F">实时任务编排</text>
-  <text x="1331" y="910" font-size="13.5" fill="#1A1E1F">营销 / 返佣 / 绩效 复杂场景</text>
-  <text x="1331" y="938" font-size="13.5" font-weight="700" fill="#0B7355">本工作线 · 待建</text>
+  <text x="1331" y="882" font-size="13" fill="#1A1E1F">实时任务编排</text>
+  <text x="1331" y="910" font-size="13" fill="#1A1E1F">营销 / 返佣 / 绩效 复杂场景</text>
+  <text x="1331" y="938" font-size="13" font-weight="700" fill="#0B7355">本工作线 · 待建</text>
 
   <!-- ===== Row 5: 数据层 ===== -->
   <rect x="165" y="1000" width="488" height="46" rx="5" fill="#0A0C0C"/>
   <text x="185" y="1029" font-size="15" font-weight="700" fill="#FFFFFF">BI · Owner 戊</text>
   <rect x="165" y="1050" width="488" height="120" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
-  <text x="185" y="1084" font-size="13.5" fill="#1A1E1F">核心指标定义与口径管理</text>
-  <text x="185" y="1114" font-size="13.5" fill="#1A1E1F">数据校验 · Excel 产出</text>
-  <text x="185" y="1144" font-size="13.5" fill="#6B7173">活动 / 绩效双线支持</text>
+  <text x="185" y="1084" font-size="13" fill="#1A1E1F">核心指标定义与口径管理</text>
+  <text x="185" y="1114" font-size="13" fill="#1A1E1F">数据校验 · Excel 产出</text>
+  <text x="185" y="1144" font-size="13" fill="#6B7173">活动 / 绩效双线支持</text>
 
   <rect x="673" y="1000" width="488" height="46" rx="5" fill="#0A0C0C"/>
   <text x="693" y="1029" font-size="15" font-weight="700" fill="#FFFFFF">数仓 · Owner 己</text>
   <rect x="673" y="1050" width="488" height="120" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
-  <text x="693" y="1084" font-size="13.5" fill="#1A1E1F">数据模型标准化 · 离线准时产出</text>
-  <text x="693" y="1114" font-size="13.5" fill="#1A1E1F">提数 离线推数 → API 接口服务</text>
-  <text x="693" y="1144" font-size="13.5" fill="#6B7173">支撑上层看板取数</text>
+  <text x="693" y="1084" font-size="13" fill="#1A1E1F">数据模型标准化 · 离线准时产出</text>
+  <text x="693" y="1114" font-size="13" fill="#1A1E1F">提数 离线推数 → API 接口服务</text>
+  <text x="693" y="1144" font-size="13" fill="#6B7173">支撑上层看板取数</text>
 
   <rect x="1181" y="1000" width="499" height="46" rx="5" fill="#0A0C0C"/>
   <text x="1201" y="1029" font-size="15" font-weight="700" fill="#FFFFFF">CDP · Owner 庚</text>
   <rect x="1181" y="1050" width="499" height="120" rx="5" fill="#FFFFFF" stroke="#E1E3E4" stroke-width="2"/>
-  <text x="1201" y="1084" font-size="13.5" fill="#1A1E1F">C 端个人平台 · 人群包 · AB Test</text>
-  <text x="1201" y="1114" font-size="13.5" fill="#1A1E1F">实时标签接口</text>
-  <text x="1201" y="1144" font-size="13.5" fill="#6B7173">业务逻辑下游加工</text>
+  <text x="1201" y="1084" font-size="13" fill="#1A1E1F">C 端个人平台 · 人群包 · AB Test</text>
+  <text x="1201" y="1114" font-size="13" fill="#1A1E1F">实时标签接口</text>
+  <text x="1201" y="1144" font-size="13" fill="#6B7173">业务逻辑下游加工</text>
 </svg>
