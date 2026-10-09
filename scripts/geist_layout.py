@@ -49,10 +49,10 @@ def LINE(x1, y1, x2, y2, c, w=1):
     return f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{c}" stroke-width="{w}"/>'
 
 def _units(s):
-    """粗估文本宽度（以 em 为单位）：CJK 与全角标点 1.0，拉丁 0.56。"""
+    """粗估文本宽度（以 em 为单位）：CJK 与全角标点 1.0，拉丁 0.60（diagram-design 实测，0.56 会低估）。"""
     u = 0.0
     for ch in s:
-        u += 1.0 if (ord(ch) > 0x2E80 or ch in "，。、；：（）「」·—～") else 0.56
+        u += 1.0 if (ord(ch) > 0x2E80 or ch in "，。、；：（）「」·—～") else 0.60
     return u
 def fit(x, y, s, maxw, size=15, fill=None, w="normal", anchor="start"):
     """按可用宽度自动缩字号，保证不溢出容器。"""

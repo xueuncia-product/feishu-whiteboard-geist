@@ -44,6 +44,7 @@ This skill is only the "Geist constraint layer". The actual draw/push engine is 
 | How a single mechanism works | **Mechanism** | Left-right / top-bottom contrast + marker arrows, emphasizing the operating logic |
 | **Data to quantify**: comparison / share / trend / flow | **Quant charts** | Call the 5 functions in `scripts/quant_charts.py` (bar+line / gauge / radar / sankey / stacked area) to generate Geist SVG; selection and usage in [references/quant-charts.md](references/quant-charts.md) |
 | State transitions / cross-role handoffs / release slicing / root cause / 2D positioning / dependencies / scheduling / conversion / chronology / experience emotion | **10 extended patterns** | State machine · swimlane · story map · fishbone · quadrant · dependency graph · Gantt · funnel · timeline · user journey — selection table and per-pattern drawing / limits / anti-patterns in [references/patterns.md](references/patterns.md); **read only the section for the one you pick** |
+| Change decomposition / call order / self-reinforcing loop / which parts of the system changed / table relations / anomalies in a grid / up-or-down between two points / target vs actual | **8 more patterns** | Waterfall · sequence · flywheel · architecture before/after · ER · heatmap · slope · dumbbell — drawing rules in patterns.md sections 11–18; **copy the matching function from `scripts/pattern_examples.py` and swap the data**; finished samples in `assets/patterns/` |
 
 If unsure, tell the user in one sentence which type you judged it to be and why; ask once before drawing if needed.
 
@@ -56,7 +57,7 @@ If unsure, tell the user in one sentence which type you judged it to be and why;
 - Put only content on the board — **don't write instructions/sources/paradigm names/"summary…" onto the canvas** (that reads like a homework header; those go in the chat reply).
 - Render: `whiteboard-cli -i x.svg -o x.png -f svg` → **review and fix** (overflow/alignment/margins/numbers hugging edges/half-images) → edit the SVG in place, batch one round of fixes then re-render — don't re-render on every single change, don't regenerate the whole thing.
 - (Optional) recolor a ready-made linen board to Geist: `python3 scripts/recolor_geist.py <board>-linen.svg` (status/structure type) or `recolor_geist_cat.py` (categorical type).
-- **Minimum font size 13px**, integers only. Run the gate before pushing: `python3 scripts/check_fonts.py x.svg` — no push unless it passes. If raising the font causes overflow, **shorten the copy or widen the container; never shrink the font again**.
+- **Minimum font size 13px**, integers only. Run both gates before pushing — no push on any ERROR: `python3 scripts/check_fonts.py x.svg` (font size) + `python3 scripts/check_geometry.py x.svg` (connectors on corners / through cards / along borders / overlapping / unmasked labels; rules in patterns.md section 0, item 4). If raising the font causes overflow, **shorten the copy or widen the container; never shrink the font again**.
 
 > ⚠️ **Local PNGs and `--check` cannot catch "online wrapping"** — they share the same font metrics as whiteboard-cli, while Feishu online uses Noto Sans SC and clamps font sizes to a minimum. Everything fine locally, text wrapping onto the next line online, is the most common failure. **Local can only falsify, never prove.**
 

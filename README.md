@@ -49,8 +49,18 @@ skill 先判断「读者要看懂的是什么」（状态 / 交接 / 归因 / �
 | 一个机制怎么运转 | **机制图** |
 | 有数据要量化：对比 / 占比 / 趋势 / 流量 | **定量图表**（柱+折线 / 仪表盘 / 雷达 / 桑基 / 堆叠面积） |
 | 状态流转、跨角色交接、分期、归因等 | **扩展 10 种**：状态机 · 泳道 · 故事地图 · 鱼骨 · 象限 · 依赖图 · 甘特 · 漏斗 · 时间轴 · 用户旅程 |
+| 增减拆解、调用先后、闭环、系统改动、表关联、找异常、两时点对比、目标差距 | **扩展第二批 8 种**：瀑布 · 时序 · 飞轮 · 架构前后对比 · ER · 热力 · 斜率 · 哑铃 |
 
-扩展 10 种的画法改编自 [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)（MIT），已换成 Geist 绿白 + 飞书画板硬限制。
+扩展 18 种的画法和连线规则（直角连线、端点离角 ≥ 8px、线上标签垫底色、图例放底部）改编自 [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design)（MIT），已换成 Geist 绿白 + 飞书画板硬限制。
+
+**第二批 8 种的样张**（源码 `scripts/pattern_examples.py`，一图一个函数，复制改数据即可）：
+
+<p>
+<img src="assets/patterns/01_waterfall.svg" width="440" alt="瀑布图"/> <img src="assets/patterns/02_sequence.svg" width="440" alt="时序图"/>
+<img src="assets/patterns/03_flywheel.svg" width="440" alt="闭环飞轮"/> <img src="assets/patterns/04_arch_delta.svg" width="440" alt="架构前后对比"/>
+<img src="assets/patterns/05_er.svg" width="440" alt="ER 图"/> <img src="assets/patterns/06_heatmap.svg" width="440" alt="热力图"/>
+<img src="assets/patterns/07_slope.svg" width="440" alt="斜率图"/> <img src="assets/patterns/08_dumbbell.svg" width="440" alt="哑铃图"/>
+</p>
 
 ## 依赖
 
@@ -81,21 +91,23 @@ git clone https://github.com/xueuncia-product/feishu-whiteboard-geist.git \
 SKILL.md                          # skill 本体
 references/diagram-visual-spec.md # Geist 绿白调色板 + 视觉规范（自包含）
 references/RULES.md               # 飞书 SVG 画板硬限制 + 渲染/推送命令（引擎 skill RULES.md 的副本）
-references/patterns.md            # 扩展 10 种范式：选型、画法、上限、反模式
+references/patterns.md            # 扩展 18 种范式 + 连线规则：选型、画法、上限、反模式
 references/quant-charts.md        # 定量图表选型与用法
 scripts/geist_layout.py           # 复合信息板布局库（卡片/表格/KPI 条，字号钳制已内建）
 scripts/quant_charts.py           # 5 类定量图表生成器
 scripts/check_fonts.py            # 推送前硬闸：字号 < 13px 或非整数即报错
+scripts/check_geometry.py         # 推送前硬闸：连线贴角 / 穿卡 / 贴边 / 重叠 / 标签没垫底
+scripts/pattern_examples.py       # 第二批 8 种范式的示例生成器（一图一个函数）
 scripts/recolor_geist.py          # 状态/结构型换肤：linen 配色 → Geist
 scripts/recolor_geist_cat.py      # 分类型换肤
-assets/                           # 4 张示例工作板 SVG（README 里展示的那几张，全虚构）
+assets/                           # 4 张示例工作板 SVG + patterns/ 下 8 张范式样张（全虚构）
 ```
 
 ## 四条铁坑
 
 1. **SVG 文字里禁 emoji**——whiteboard-cli 遇 emoji 会静默断图。
 2. **导出 PNG 文字颜色不可信**（白字常变黑）——核验颜色看线上或用 `--output_as raw`。
-3. **字号 < 13px 会在飞书线上折行**，本地渲染查不出——推前跑 `scripts/check_fonts.py`，推后看线上图。
+3. **字号 < 13px 会在飞书线上折行**，本地渲染查不出——推前跑 `scripts/check_fonts.py` 和 `scripts/check_geometry.py`，推后看线上图。
 4. **配色不要自由发挥**——只用 `diagram-visual-spec.md` 的 token。
 
 ## 致谢

@@ -49,8 +49,18 @@ The skill first decides what the reader needs to understand (state / handoff / c
 | How a single mechanism works | **Mechanism** |
 | Data to quantify: comparison / share / trend / flow | **Quant charts** (bar+line / gauge / radar / sankey / stacked area) |
 | State transitions, cross-role handoffs, release slicing, root cause, etc. | **10 extended patterns**: state machine · swimlane · story map · fishbone · quadrant · dependency graph · Gantt · funnel · timeline · user journey |
+| Change decomposition, call order, reinforcing loops, system changes, table relations, anomaly spotting, two-point comparison, target gaps | **8 more patterns**: waterfall · sequence · flywheel · architecture before/after · ER · heatmap · slope · dumbbell |
 
-The 10 extended patterns are adapted from [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) (MIT), re-skinned to Geist green-and-white under Feishu whiteboard constraints.
+The 18 extended patterns and the connector rules (orthogonal connectors, endpoints ≥ 8px from node corners, masked labels on lines, legend at the bottom) are adapted from [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design) (MIT), re-skinned to Geist green-and-white under Feishu whiteboard constraints.
+
+**Samples of the second batch of 8** (source: `scripts/pattern_examples.py`, one function per chart — copy one and swap the data):
+
+<p>
+<img src="assets/patterns/01_waterfall.svg" width="440" alt="waterfall"/> <img src="assets/patterns/02_sequence.svg" width="440" alt="sequence"/>
+<img src="assets/patterns/03_flywheel.svg" width="440" alt="flywheel"/> <img src="assets/patterns/04_arch_delta.svg" width="440" alt="architecture before/after"/>
+<img src="assets/patterns/05_er.svg" width="440" alt="ER diagram"/> <img src="assets/patterns/06_heatmap.svg" width="440" alt="heatmap"/>
+<img src="assets/patterns/07_slope.svg" width="440" alt="slope chart"/> <img src="assets/patterns/08_dumbbell.svg" width="440" alt="dumbbell chart"/>
+</p>
 
 ## Dependencies
 
@@ -81,21 +91,23 @@ Then say "draw this on a Feishu whiteboard: ..." in Claude Code. SKILL.md refere
 SKILL.md                          # the skill itself
 references/diagram-visual-spec.md # Geist green-and-white palette + visual spec (self-contained)
 references/RULES.md               # Feishu SVG whiteboard hard limits + render/push commands (copy of the engine skill's RULES.md)
-references/patterns.md            # 10 extended patterns: when to use, how to draw, limits, anti-patterns
+references/patterns.md            # 18 extended patterns + connector rules: when to use, how to draw, limits, anti-patterns
 references/quant-charts.md        # quant chart selection and usage
 scripts/geist_layout.py           # layout helpers for composite boards (cards/tables/KPI strips, font clamping built in)
 scripts/quant_charts.py           # generators for 5 quant chart types
 scripts/check_fonts.py            # pre-push gate: fails on font size < 13px or non-integer
+scripts/check_geometry.py         # pre-push gate: connectors on corners / through cards / along borders / overlapping / unmasked labels
+scripts/pattern_examples.py       # example generator for the second batch of 8 patterns (one function per chart)
 scripts/recolor_geist.py          # status/structure recolor: linen palette → Geist
 scripts/recolor_geist_cat.py      # categorical recolor
-assets/                           # 4 example board SVGs (the ones shown in the README, all fictional)
+assets/                           # 4 example board SVGs + 8 pattern samples under patterns/ (all fictional)
 ```
 
 ## Four hard pitfalls
 
 1. **No emoji in SVG text** — whiteboard-cli silently breaks the image on emoji.
 2. **Exported-PNG text color is unreliable** (white text often turns black) — verify colors online or use `--output_as raw`.
-3. **Font size < 13px wraps on Feishu online** and local renders can't catch it — run `scripts/check_fonts.py` before pushing and check the online image after.
+3. **Font size < 13px wraps on Feishu online** and local renders can't catch it — run `scripts/check_fonts.py` and `scripts/check_geometry.py` before pushing and check the online image after.
 4. **Don't improvise colors** — use only the tokens from `diagram-visual-spec.md`.
 
 ## Credits

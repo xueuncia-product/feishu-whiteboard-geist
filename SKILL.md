@@ -38,6 +38,7 @@ description: >
 | 一个机制怎么运转 | **机制图** | 左右/上下对照 + marker 箭头，突出运转逻辑 |
 | **有数据要量化**：对比/占比/趋势/流量 | **定量图表** | 直接调 `scripts/quant_charts.py` 的 5 个函数（柱+折线 / 仪表盘 / 雷达 / 桑基 / 堆叠面积）生成 Geist SVG，用法与选型见 [references/quant-charts.md](references/quant-charts.md) |
 | 状态流转 / 跨角色交接 / 分期切线 / 归因 / 二维定位 / 依赖 / 排期 / 转化 / 时间先后 / 体验情绪 | **扩展 10 种范式** | 状态机·泳道·故事地图·鱼骨·象限·依赖图·甘特·漏斗·时间轴·用户旅程——选型表和逐条画法/上限/反模式见 [references/patterns.md](references/patterns.md)，**选中哪一种才读哪一段** |
+| 增减拆解 / 调用先后 / 自我强化的环 / 系统改了哪几块 / 表关联 / 格子找异常 / 两时点升降 / 目标 vs 实际 | **扩展第二批 8 种** | 瀑布·时序·飞轮·架构前后对比·ER·热力·斜率·哑铃——画法见 patterns.md 十一～十八；**直接复制 `scripts/pattern_examples.py` 里对应函数改数据**，成品样张在 `assets/patterns/` |
 
 拿不准就用一句话告诉他你判断成哪类、为什么，必要时问一句再画。
 
@@ -51,7 +52,8 @@ description: >
 - 画板只放内容，**不要把指令/来源/范式名/"总结…"写到画布上**（那像作业抬头，那些放聊天回复里）。
 - 渲染：`whiteboard-cli -i x.svg -o x.png -f svg` → **看图修**（溢出/对齐/边距/数字贴边/半张图）→ 就地小改 SVG、一轮批量改完再重渲，别每改一处重渲、别整张重生成。
 - （可选）把现成的 linen 配色画板换成 Geist：`python3 scripts/recolor_geist.py <图>-linen.svg`（状态/结构型）或 `recolor_geist_cat.py`（分类型）。
-- **字号下限 13px**，且写整数。推之前跑硬闸：`python3 scripts/check_fonts.py x.svg`，不过不许推。
+- **字号下限 13px**，且写整数。推之前跑两道硬闸，有 ERROR 不许推：
+  `python3 scripts/check_fonts.py x.svg`（字号）+ `python3 scripts/check_geometry.py x.svg`（连线贴角/穿卡/贴边/重叠/标签没垫底，规则见 patterns.md 第零节第 4 条）。
   字号提高后若冒出溢出，**只能缩短文案或加宽容器，不许再调小字号**。
 
 > ⚠️ **本地 PNG 和 `--check` 查不出「线上折行」这一整类问题**——它们和 whiteboard-cli 共用同一套字体度量，
